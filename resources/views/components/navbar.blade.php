@@ -61,7 +61,7 @@
                     About Us
                 </a>
 
-                <a href="#services"
+                <a href="{{ route('services') }}"
                    class="text-gray-700 hover:text-[#0056a6] font-medium transition">
                     Services
                 </a>
@@ -113,10 +113,10 @@
                     About Us
                 </a>
 
-                <a href="#services"
+                <a href="{{ route('services') }}">
                    class="px-4 py-3 hover:bg-[#eaf3fb] text-gray-700">
                     Services
-                </a>
+                </>
 
                 <a href="{{ route('loans') }}"
                    class="px-4 py-3 hover:bg-[#eaf3fb] text-gray-700">

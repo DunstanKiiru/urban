@@ -14,6 +14,8 @@ Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 
 Route::view('/loans', 'loans')->name('loans');
 
+Route::view('/services', 'services')->name('services');
+
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::view('dashboard', 'dashboard')->name('dashboard');
 });
