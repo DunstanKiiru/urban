@@ -71,7 +71,7 @@
                     Loan Products
                 </>
 
-                <a href="#membership"
+                <a href="{{ route('membership') }}"
                    class="text-gray-700 hover:text-[#0056a6] font-medium transition">
                     Membership
                 </a>
@@ -123,7 +123,7 @@
                     Loan Products
                 </a>
 
-                <a href="#membership"
+                <a href="{{ route('membership') }}"
                    class="px-4 py-3 hover:bg-[#eaf3fb] text-gray-700">
                     Membership
                 </a>

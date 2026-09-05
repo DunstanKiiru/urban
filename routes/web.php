@@ -16,6 +16,8 @@ Route::view('/loans', 'loans')->name('loans');
 
 Route::view('/services', 'services')->name('services');
 
+Route::view('/membership', 'membership')->name('membership');
+
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::view('dashboard', 'dashboard')->name('dashboard');
 });
