@@ -66,10 +66,10 @@
                     Services
                 </a>
 
-                <a href="#loans"
+                <a href="{{ route('loans') }}"
                    class="text-gray-700 hover:text-[#0056a6] font-medium transition">
                     Loan Products
-                </a>
+                </>
 
                 <a href="#membership"
                    class="text-gray-700 hover:text-[#0056a6] font-medium transition">
@@ -118,7 +118,7 @@
                     Services
                 </a>
 
-                <a href="#loans"
+                <a href="{{ route('loans') }}"
                    class="px-4 py-3 hover:bg-[#eaf3fb] text-gray-700">
                     Loan Products
                 </a>
