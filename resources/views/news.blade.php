@@ -5,224 +5,232 @@
 @section('content')
 
 {{-- PAGE HEADER --}}
-<section class="bg-[#003f7d]">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
-        <p class="text-sm font-semibold uppercase tracking-wider text-[#f4b400]">
+<section class="bg-[#2F7D47]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <p class="text-sm font-semibold uppercase tracking-wider text-[#F7D928]">
             Stay Informed
         </p>
 
-        <h1 class="mt-3 text-4xl md:text-5xl font-bold text-white">
-            News & Announcements
-        </h1>
+    <h1 class="mt-3 text-4xl md:text-5xl font-bold text-white">
+        News & Announcements
+    </h1>
 
-        <p class="mt-5 max-w-2xl text-blue-100 leading-relaxed">
-            Keep up with the latest news, announcements, events and
-            activities from Urban Roads SACCO.
-        </p>
+    <div class="w-14 h-1 bg-[#F7D928] mt-5"></div>
 
-    </div>
+    <p class="mt-6 max-w-2xl text-lg text-[#EAF5ED] leading-relaxed">
+        Stay up to date with important news, announcements, notices and
+        updates from Urban Roads SACCO.
+    </p>
+</div>
+
 </section>
 
+{{-- NEWS SECTION --}}
 
-{{-- NEWS LIST --}}
-<section class="py-16 bg-[#f5f7fa]">
-
+<section class="py-16 bg-[#F7F8F7]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+    {{-- SECTION INTRO --}}
+    <div class="max-w-2xl mb-10">
+        <p class="text-sm font-semibold uppercase tracking-wider text-[#479F61]">
+            Latest Updates
+        </p>
 
-            {{-- NEWS ITEM 1 --}}
-            <article class="bg-white border border-gray-200
-                            hover:shadow-lg transition">
+        <h2 class="mt-2 text-3xl md:text-4xl font-bold text-[#2F7D47]">
+            What's Happening
+        </h2>
 
-                <div class="h-2 bg-[#0056a6]"></div>
+        <div class="w-12 h-1 bg-[#F7D928] mt-4"></div>
 
-                <div class="p-7">
+        <p class="mt-5 text-gray-600 leading-relaxed">
+            Find the latest information and updates relevant to Urban
+            Roads SACCO members.
+        </p>
+    </div>
 
-                    <div class="flex items-center justify-between gap-3">
 
-                        <span class="text-xs font-semibold uppercase
-                                     tracking-wide text-[#168a45]">
-                            Announcement
-                        </span>
+    {{-- NEWS GRID --}}
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
 
-                        <span class="text-xs text-gray-500">
-                            11 Dec 2025
-                        </span>
+        {{-- NEWS ITEM 1 --}}
+        <article class="bg-white border border-gray-200 hover:border-[#479F61] hover:shadow-lg transition duration-300 group">
 
-                    </div>
+            <div class="h-2 bg-[#479F61]"></div>
 
-                    <h2 class="mt-4 text-xl font-bold text-[#003f7d]">
-                        Members Training Seminar
-                    </h2>
+            <div class="p-7">
 
-                    <p class="mt-4 text-sm text-gray-600 leading-relaxed">
-                        Members Training Seminar scheduled for 11th December
-                        2025. Members are encouraged to participate and stay
-                        informed.
-                    </p>
+                <div class="flex items-center justify-between gap-4">
 
-                    <span class="inline-block mt-5 text-sm font-semibold
-                                 text-[#0056a6]">
-                        Read More →
+                    <span class="inline-flex items-center px-3 py-1 bg-[#EAF5ED] text-[#2F7D47] text-xs font-semibold uppercase tracking-wide">
+                        Announcement
+                    </span>
+
+                    <span class="text-xs text-gray-500">
+                        Latest
                     </span>
 
                 </div>
 
-            </article>
+                <h3 class="mt-5 text-xl font-bold text-[#2F7D47] group-hover:text-[#479F61] transition">
+                    SACCO News & Announcements
+                </h3>
+
+                <p class="mt-4 text-gray-600 leading-relaxed">
+                    Keep checking this section for important announcements,
+                    notices and updates from Urban Roads SACCO.
+                </p>
+
+                <div class="mt-6 pt-5 border-t border-gray-100">
+
+                    <a href="{{ route('contact') }}"
+                       class="inline-flex items-center gap-2 text-sm font-semibold text-[#479F61] hover:text-[#2F7D47] transition">
+
+                        Get More Information
+
+                        <span aria-hidden="true">→</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
 
 
-            {{-- NEWS ITEM 2 --}}
-            <article class="bg-white border border-gray-200
-                            hover:shadow-lg transition">
+        {{-- NEWS ITEM 2 --}}
+        <article class="bg-white border border-gray-200 hover:border-[#2F7D47] hover:shadow-lg transition duration-300 group">
 
-                <div class="h-2 bg-[#168a45]"></div>
+            <div class="h-2 bg-[#2F7D47]"></div>
 
-                <div class="p-7">
+            <div class="p-7">
 
-                    <div class="flex items-center justify-between gap-3">
+                <div class="flex items-center justify-between gap-4">
 
-                        <span class="text-xs font-semibold uppercase
-                                     tracking-wide text-[#168a45]">
-                            Members
-                        </span>
+                    <span class="inline-flex items-center px-3 py-1 bg-[#EAF5ED] text-[#2F7D47] text-xs font-semibold uppercase tracking-wide">
+                        Member Notice
+                    </span>
 
-                        <span class="text-xs text-gray-500">
-                            Notice
-                        </span>
-
-                    </div>
-
-                    <h2 class="mt-4 text-xl font-bold text-[#003f7d]">
-                        Important Member Information
-                    </h2>
-
-                    <p class="mt-4 text-sm text-gray-600 leading-relaxed">
-                        Members are encouraged to keep up to date with SACCO
-                        communications, notices and important information.
-                    </p>
-
-                    <span class="inline-block mt-5 text-sm font-semibold
-                                 text-[#0056a6]">
-                        Read More →
+                    <span class="text-xs text-gray-500">
+                        Members
                     </span>
 
                 </div>
 
-            </article>
+                <h3 class="mt-5 text-xl font-bold text-[#2F7D47] group-hover:text-[#479F61] transition">
+                    Member Information
+                </h3>
+
+                <p class="mt-4 text-gray-600 leading-relaxed">
+                    Important information affecting members will be shared
+                    through the SACCO's official communication channels.
+                </p>
+
+                <div class="mt-6 pt-5 border-t border-gray-100">
+
+                    <a href="{{ route('membership') }}"
+                       class="inline-flex items-center gap-2 text-sm font-semibold text-[#479F61] hover:text-[#2F7D47] transition">
+
+                        Membership Information
+
+                        <span aria-hidden="true">→</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
 
 
-            {{-- NEWS ITEM 3 --}}
-            <article class="bg-white border border-gray-200
-                            hover:shadow-lg transition">
+        {{-- NEWS ITEM 3 --}}
+        <article class="bg-white border border-gray-200 hover:border-[#F7D928] hover:shadow-lg transition duration-300 group">
 
-                <div class="h-2 bg-[#f4b400]"></div>
+            <div class="h-2 bg-[#F7D928]"></div>
 
-                <div class="p-7">
+            <div class="p-7">
 
-                    <div class="flex items-center justify-between gap-3">
+                <div class="flex items-center justify-between gap-4">
 
-                        <span class="text-xs font-semibold uppercase
-                                     tracking-wide text-[#168a45]">
-                            SACCO News
-                        </span>
+                    <span class="inline-flex items-center px-3 py-1 bg-[#F7F8F7] text-[#D8B900] text-xs font-semibold uppercase tracking-wide">
+                        Updates
+                    </span>
 
-                        <span class="text-xs text-gray-500">
-                            Updates
-                        </span>
-
-                    </div>
-
-                    <h2 class="mt-4 text-xl font-bold text-[#003f7d]">
-                        Latest SACCO Activities
-                    </h2>
-
-                    <p class="mt-4 text-sm text-gray-600 leading-relaxed">
-                        Find updates about activities, programmes and
-                        developments taking place at Urban Roads SACCO.
-                    </p>
-
-                    <span class="inline-block mt-5 text-sm font-semibold
-                                 text-[#0056a6]">
-                        Read More →
+                    <span class="text-xs text-gray-500">
+                        SACCO
                     </span>
 
                 </div>
 
-            </article>
+                <h3 class="mt-5 text-xl font-bold text-[#2F7D47] group-hover:text-[#479F61] transition">
+                    Services & Loan Updates
+                </h3>
+
+                <p class="mt-4 text-gray-600 leading-relaxed">
+                    Stay informed about available SACCO services and loan
+                    products designed to support members' financial needs.
+                </p>
+
+                <div class="mt-6 pt-5 border-t border-gray-100">
+
+                    <a href="{{ route('loans') }}"
+                       class="inline-flex items-center gap-2 text-sm font-semibold text-[#479F61] hover:text-[#2F7D47] transition">
+
+                        View Loan Products
+
+                        <span aria-hidden="true">→</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</div>
+
+</section>
+
+{{-- INFORMATION CTA --}}
+
+<section class="bg-[#2F7D47] border-b-2 border-white">
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-7">
+
+        <div>
+
+            <p class="text-sm font-semibold uppercase tracking-wider text-[#F7D928]">
+                Need Assistance?
+            </p>
+
+            <h2 class="mt-2 text-2xl md:text-3xl font-bold text-white">
+                Have a question about an announcement?
+            </h2>
+
+            <p class="mt-3 text-[#EAF5ED]">
+                Contact Urban Roads SACCO for more information.
+            </p>
 
         </div>
 
-    </div>
-
-</section>
-
-
-{{-- SUBSCRIBE / INFORMATION CTA --}}
-<section class="py-16 bg-white">
-
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-
-        <p class="text-sm font-semibold uppercase tracking-wider text-[#168a45]">
-            Stay Connected
-        </p>
-
-        <h2 class="mt-3 text-3xl font-bold text-[#003f7d]">
-            Don't Miss Important Updates
-        </h2>
-
-        <div class="w-12 h-1 bg-[#f4b400] mx-auto mt-4"></div>
-
-        <p class="mt-5 text-gray-600 leading-relaxed">
-            Check this page regularly for announcements, member notices,
-            training programmes, events and other SACCO updates.
-        </p>
 
         <a href="{{ route('contact') }}"
-           class="inline-block mt-7 bg-[#0056a6] text-white
-                  px-7 py-3 font-semibold rounded-sm
-                  hover:bg-[#003f7d] transition">
-            Contact the SACCO
+           class="inline-flex items-center justify-center bg-white text-[#2F7D47] px-7 py-3 font-semibold rounded-sm hover:bg-[#F7D928] hover:text-[#2F7D47] transition duration-200">
+
+            Contact Us
+
         </a>
 
     </div>
 
-</section>
-
-
-{{-- CTA --}}
-<section class="bg-[#003f7d]">
-
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-
-        <div class="flex flex-col md:flex-row md:items-center
-                    md:justify-between gap-6">
-
-            <div class="text-white">
-
-                <h2 class="text-2xl md:text-3xl font-bold">
-                    Looking for SACCO documents?
-                </h2>
-
-                <p class="mt-2 text-blue-100">
-                    Access forms, reports, notices and other useful
-                    documents.
-                </p>
-
-            </div>
-
-            <a href="#"
-               class="inline-block bg-white text-[#003f7d]
-                      px-7 py-3 font-semibold rounded-sm
-                      hover:bg-gray-100 transition">
-                View Documents
-            </a>
-
-        </div>
-
-    </div>
-
+</div>
 </section>
 
 @endsection

@@ -4,325 +4,400 @@
 
 @section('content')
 
-{{-- =========================================================
-     PAGE HEADER
-========================================================= --}}
-<section class="bg-[#003f7d]">
+{{-- PAGE HEADER --}}
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+<section class="bg-[#2F7D47]">
 
-        <div class="max-w-3xl">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
-            <p class="text-sm font-semibold uppercase
-                      tracking-wider text-[#f4b400]">
-                Get In Touch
-            </p>
+    <p class="text-sm font-semibold uppercase tracking-wider text-[#F7D928]">
+        Get In Touch
+    </p>
 
-            <h1 class="mt-3 text-4xl md:text-5xl
-                       font-bold text-white">
-                Contact Us
-            </h1>
+    <h1 class="mt-3 text-4xl md:text-5xl font-bold text-white">
+        Contact Us
+    </h1>
 
-            <p class="mt-5 text-lg text-blue-100
-                      leading-relaxed">
-                Have a question, need assistance or want to learn more
-                about Urban Roads SACCO? Our team is ready to help.
-            </p>
+    <div class="w-14 h-1 bg-[#F7D928] mt-5"></div>
 
-        </div>
+    <p class="mt-6 max-w-2xl text-lg text-[#EAF5ED] leading-relaxed">
+        We are here to assist you with enquiries about membership,
+        savings, loans and other Urban Roads SACCO services.
+    </p>
 
-    </div>
+</div>
 
 </section>
 
+{{-- CONTACT CONTENT --}}
 
-{{-- =========================================================
-     CONTACT INFORMATION + FORM
-========================================================= --}}
-<section class="py-16 bg-[#f5f7fa]">
+<section class="py-16 bg-[#F7F8F7]">
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div class="grid lg:grid-cols-3 gap-8">
+    <div class="grid lg:grid-cols-5 gap-10">
 
 
-            {{-- =================================================
-                 CONTACT INFORMATION
-            ================================================== --}}
-            <div class="lg:col-span-1">
+        {{-- CONTACT INFORMATION --}}
+        <div class="lg:col-span-2">
 
-                <div class="bg-white border border-gray-200 p-7">
+            <p class="text-sm font-semibold uppercase tracking-wider text-[#479F61]">
+                Contact Information
+            </p>
 
-                    <p class="text-sm font-semibold uppercase
-                              tracking-wider text-[#168a45]">
-                        Contact Information
-                    </p>
+            <h2 class="mt-2 text-3xl font-bold text-[#2F7D47]">
+                We're here to help
+            </h2>
 
-                    <h2 class="mt-3 text-2xl font-bold
-                               text-[#003f7d]">
-                        We're Here to Help
-                    </h2>
+            <div class="w-12 h-1 bg-[#F7D928] mt-4"></div>
 
-                    <div class="w-12 h-1 bg-[#f4b400] mt-4"></div>
+            <p class="mt-5 text-gray-600 leading-relaxed">
+                Get in touch with Urban Roads SACCO for assistance,
+                enquiries or information about our services.
+            </p>
 
 
-                    {{-- EMAIL --}}
-                    <div class="mt-8">
+            <div class="mt-8 space-y-5">
 
-                        <div class="w-11 h-11 bg-[#eaf3fb]
-                                    text-[#0056a6]
-                                    flex items-center justify-center
-                                    font-bold">
-                            @
+
+                {{-- EMAIL --}}
+                <div class="bg-white border border-gray-200 p-5 hover:border-[#479F61] hover:shadow-sm transition">
+
+                    <div class="flex items-start gap-4">
+
+                        <div class="w-12 h-12 shrink-0 bg-[#EAF5ED] text-[#2F7D47] flex items-center justify-center">
+
+                            <svg class="w-5 h-5"
+                                 fill="none"
+                                 stroke="currentColor"
+                                 viewBox="0 0 24 24">
+
+                                <path stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="2"
+                                      d="M3 8l9 6 9-6M5 5h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2z"/>
+
+                            </svg>
+
                         </div>
 
-                        <p class="mt-4 text-xs font-semibold
-                                  uppercase tracking-wide
-                                  text-gray-500">
-                            Email
+
+                        <div>
+
+                            <p class="text-xs font-semibold uppercase tracking-wider text-gray-500">
+                                Email
+                            </p>
+
+                            <a href="mailto:sacco@kura.go.ke"
+                               class="mt-1 inline-block font-semibold text-[#2F7D47] hover:text-[#479F61] break-all">
+
+                                sacco@kura.go.ke
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                {{-- PHONE --}}
+                <div class="bg-white border border-gray-200 p-5 hover:border-[#479F61] hover:shadow-sm transition">
+
+                    <div class="flex items-start gap-4">
+
+                        <div class="w-12 h-12 shrink-0 bg-[#EAF5ED] text-[#2F7D47] flex items-center justify-center">
+
+                            <svg class="w-5 h-5"
+                                 fill="none"
+                                 stroke="currentColor"
+                                 viewBox="0 0 24 24">
+
+                                <path stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="2"
+                                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.68l1.5 4.49a1 1 0 01-.5 1.21l-2.12 1.06a11.05 11.05 0 005.46 5.46l1.06-2.12a1 1 0 011.21-.5l4.49 1.5a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C10.72 21 3 13.28 3 5z"/>
+
+                            </svg>
+
+                        </div>
+
+
+                        <div>
+
+                            <p class="text-xs font-semibold uppercase tracking-wider text-gray-500">
+                                Customer Care
+                            </p>
+
+                            <a href="tel:0793524349"
+                               class="mt-1 inline-block font-semibold text-[#2F7D47] hover:text-[#479F61]">
+
+                                0793 524 349
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                {{-- WORKING HOURS --}}
+                <div class="bg-white border border-gray-200 p-5 hover:border-[#F7D928] hover:shadow-sm transition">
+
+                    <div class="flex items-start gap-4">
+
+                        <div class="w-12 h-12 shrink-0 bg-[#F7F8F7] text-[#D8B900] flex items-center justify-center">
+
+                            <svg class="w-5 h-5"
+                                 fill="none"
+                                 stroke="currentColor"
+                                 viewBox="0 0 24 24">
+
+                                <path stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="2"
+                                      d="M12 8v4l3 2m6-2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+
+                            </svg>
+
+                        </div>
+
+
+                        <div>
+
+                            <p class="text-xs font-semibold uppercase tracking-wider text-gray-500">
+                                Working Hours
+                            </p>
+
+                            <p class="mt-1 font-semibold text-[#2F7D47]">
+                                Monday - Friday
+                            </p>
+
+                            <p class="text-sm text-gray-600">
+                                9:00 AM - 5:00 PM
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        {{-- CONTACT FORM --}}
+        <div class="lg:col-span-3">
+
+            <div class="bg-white border border-gray-200 p-7 md:p-9 shadow-sm">
+
+
+                <div class="mb-7">
+
+                    <p class="text-sm font-semibold uppercase tracking-wider text-[#479F61]">
+                        Send Us A Message
+                    </p>
+
+                    <h2 class="mt-2 text-2xl md:text-3xl font-bold text-[#2F7D47]">
+                        How can we help?
+                    </h2>
+
+                    <p class="mt-3 text-gray-600">
+                        Fill in the form below and our team will get back to you.
+                    </p>
+
+                </div>
+
+
+                {{-- SUCCESS MESSAGE --}}
+                @if(session('success'))
+
+                    <div class="mb-6 border border-[#479F61] bg-[#EAF5ED] px-4 py-4 text-sm text-[#2F7D47]">
+
+                        {{ session('success') }}
+
+                    </div>
+
+                @endif
+
+
+                {{-- VALIDATION ERRORS --}}
+                @if($errors->any())
+
+                    <div class="mb-6 border border-red-200 bg-red-50 px-4 py-4 text-sm text-red-700">
+
+                        <p class="font-semibold mb-2">
+                            Please correct the following:
                         </p>
 
-                        <a href="mailto:sacco@kura.go.ke"
-                           class="mt-1 block text-[#0056a6]
-                                  font-medium hover:underline">
-                            sacco@kura.go.ke
-                        </a>
+                        <ul class="list-disc list-inside space-y-1">
+
+                            @foreach($errors->all() as $error)
+
+                                <li>
+                                    {{ $error }}
+                                </li>
+
+                            @endforeach
+
+                        </ul>
+
+                    </div>
+
+                @endif
+
+
+                {{-- FORM --}}
+                <form action="{{ route('contact') }}"
+                      method="POST"
+                      class="space-y-6">
+
+                    @csrf
+
+
+                    {{-- NAME + EMAIL --}}
+                    <div class="grid md:grid-cols-2 gap-6">
+
+
+                        {{-- NAME --}}
+                        <div>
+
+                            <label for="name"
+                                   class="block text-sm font-semibold text-gray-700 mb-2">
+
+                                Full Name
+
+                            </label>
+
+                            <input type="text"
+                                   id="name"
+                                   name="name"
+                                   value="{{ old('name') }}"
+                                   required
+                                   autocomplete="name"
+                                   class="w-full border border-gray-300 px-4 py-3 text-sm text-gray-800 focus:border-[#479F61] focus:ring-1 focus:ring-[#479F61]"
+                                   placeholder="Your full name">
+
+                        </div>
+
+
+                        {{-- EMAIL --}}
+                        <div>
+
+                            <label for="email"
+                                   class="block text-sm font-semibold text-gray-700 mb-2">
+
+                                Email Address
+
+                            </label>
+
+                            <input type="email"
+                                   id="email"
+                                   name="email"
+                                   value="{{ old('email') }}"
+                                   required
+                                   autocomplete="email"
+                                   class="w-full border border-gray-300 px-4 py-3 text-sm text-gray-800 focus:border-[#479F61] focus:ring-1 focus:ring-[#479F61]"
+                                   placeholder="you@example.com">
+
+                        </div>
 
                     </div>
 
 
                     {{-- PHONE --}}
-                    <div class="mt-7">
+                    <div>
 
-                        <div class="w-11 h-11 bg-green-50
-                                    text-[#168a45]
-                                    flex items-center justify-center
-                                    font-bold">
-                            ☎
-                        </div>
+                        <label for="phone"
+                               class="block text-sm font-semibold text-gray-700 mb-2">
 
-                        <p class="mt-4 text-xs font-semibold
-                                  uppercase tracking-wide
-                                  text-gray-500">
-                            Customer Care
-                        </p>
+                            Phone Number
 
-                        <a href="tel:0793524349"
-                           class="mt-1 block text-[#0056a6]
-                                  font-medium hover:underline">
-                            0793 524 349
-                        </a>
+                        </label>
+
+                        <input type="tel"
+                               id="phone"
+                               name="phone"
+                               value="{{ old('phone') }}"
+                               autocomplete="tel"
+                               class="w-full border border-gray-300 px-4 py-3 text-sm text-gray-800 focus:border-[#479F61] focus:ring-1 focus:ring-[#479F61]"
+                               placeholder="07XX XXX XXX">
 
                     </div>
 
 
-                    {{-- WORKING HOURS --}}
-                    <div class="mt-7">
+                    {{-- SUBJECT --}}
+                    <div>
 
-                        <div class="w-11 h-11 bg-yellow-50
-                                    text-[#c58d00]
-                                    flex items-center justify-center
-                                    font-bold">
-                            ⏰
-                        </div>
+                        <label for="subject"
+                               class="block text-sm font-semibold text-gray-700 mb-2">
 
-                        <p class="mt-4 text-xs font-semibold
-                                  uppercase tracking-wide
-                                  text-gray-500">
-                            Working Hours
-                        </p>
+                            Subject
 
-                        <p class="mt-1 text-gray-700 font-medium">
-                            Monday - Friday
-                        </p>
+                        </label>
 
-                        <p class="text-gray-500 text-sm">
-                            9:00 AM - 5:00 PM
-                        </p>
+                        <input type="text"
+                               id="subject"
+                               name="subject"
+                               value="{{ old('subject') }}"
+                               required
+                               class="w-full border border-gray-300 px-4 py-3 text-sm text-gray-800 focus:border-[#479F61] focus:ring-1 focus:ring-[#479F61]"
+                               placeholder="How can we assist you?">
 
                     </div>
 
-                </div>
 
-            </div>
+                    {{-- MESSAGE --}}
+                    <div>
 
+                        <label for="message"
+                               class="block text-sm font-semibold text-gray-700 mb-2">
 
-            {{-- =================================================
-                 CONTACT FORM
-            ================================================== --}}
-            <div class="lg:col-span-2">
+                            Message
 
-                <div class="bg-white border border-gray-200 p-7 md:p-9">
+                        </label>
 
-                    <p class="text-sm font-semibold uppercase
-                              tracking-wider text-[#168a45]">
-                        Send Us a Message
-                    </p>
+                        <textarea id="message"
+                                  name="message"
+                                  rows="6"
+                                  required
+                                  class="w-full border border-gray-300 px-4 py-3 text-sm text-gray-800 resize-none focus:border-[#479F61] focus:ring-1 focus:ring-[#479F61]"
+                                  placeholder="Write your message here...">{{ old('message') }}</textarea>
 
-                    <h2 class="mt-3 text-2xl font-bold
-                               text-[#003f7d]">
-                        How Can We Assist You?
-                    </h2>
-
-                    <div class="w-12 h-1 bg-[#f4b400] mt-4"></div>
+                    </div>
 
 
-                    {{-- FORM --}}
-                    <form action="#" method="POST"
-                          class="mt-8">
+                    {{-- SUBMIT --}}
+                    <div class="pt-2">
 
-                        @csrf
+                        <button type="submit"
+                                class="inline-flex items-center justify-center gap-2 bg-[#479F61] text-white px-7 py-3 font-semibold rounded-sm hover:bg-[#2F7D47] hover:shadow-md transition duration-200">
 
-                        <div class="grid md:grid-cols-2 gap-6">
+                            Send Message
 
-                            {{-- NAME --}}
-                            <div>
+                            <svg class="w-4 h-4"
+                                 fill="none"
+                                 stroke="currentColor"
+                                 viewBox="0 0 24 24">
 
-                                <label for="name"
-                                       class="block text-sm
-                                              font-semibold
-                                              text-gray-700">
-                                    Full Name
-                                </label>
+                                <path stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="2"
+                                      d="M14 5l7 7m0 0l-7 7m7-7H3"/>
 
-                                <input type="text"
-                                       id="name"
-                                       name="name"
-                                       placeholder="Enter your full name"
-                                       class="mt-2 w-full border
-                                              border-gray-300
-                                              px-4 py-3
-                                              focus:outline-none
-                                              focus:border-[#0056a6]
-                                              focus:ring-1
-                                              focus:ring-[#0056a6]">
+                            </svg>
 
-                            </div>
+                        </button>
 
+                    </div>
 
-                            {{-- EMAIL --}}
-                            <div>
-
-                                <label for="email"
-                                       class="block text-sm
-                                              font-semibold
-                                              text-gray-700">
-                                    Email Address
-                                </label>
-
-                                <input type="email"
-                                       id="email"
-                                       name="email"
-                                       placeholder="Enter your email"
-                                       class="mt-2 w-full border
-                                              border-gray-300
-                                              px-4 py-3
-                                              focus:outline-none
-                                              focus:border-[#0056a6]
-                                              focus:ring-1
-                                              focus:ring-[#0056a6]">
-
-                            </div>
-
-
-                            {{-- PHONE --}}
-                            <div>
-
-                                <label for="phone"
-                                       class="block text-sm
-                                              font-semibold
-                                              text-gray-700">
-                                    Phone Number
-                                </label>
-
-                                <input type="tel"
-                                       id="phone"
-                                       name="phone"
-                                       placeholder="Enter your phone number"
-                                       class="mt-2 w-full border
-                                              border-gray-300
-                                              px-4 py-3
-                                              focus:outline-none
-                                              focus:border-[#0056a6]
-                                              focus:ring-1
-                                              focus:ring-[#0056a6]">
-
-                            </div>
-
-
-                            {{-- SUBJECT --}}
-                            <div>
-
-                                <label for="subject"
-                                       class="block text-sm
-                                              font-semibold
-                                              text-gray-700">
-                                    Subject
-                                </label>
-
-                                <input type="text"
-                                       id="subject"
-                                       name="subject"
-                                       placeholder="What can we help you with?"
-                                       class="mt-2 w-full border
-                                              border-gray-300
-                                              px-4 py-3
-                                              focus:outline-none
-                                              focus:border-[#0056a6]
-                                              focus:ring-1
-                                              focus:ring-[#0056a6]">
-
-                            </div>
-
-                        </div>
-
-
-                        {{-- MESSAGE --}}
-                        <div class="mt-6">
-
-                            <label for="message"
-                                   class="block text-sm
-                                          font-semibold
-                                          text-gray-700">
-                                Message
-                            </label>
-
-                            <textarea id="message"
-                                      name="message"
-                                      rows="6"
-                                      placeholder="Write your message here..."
-                                      class="mt-2 w-full border
-                                             border-gray-300
-                                             px-4 py-3
-                                             focus:outline-none
-                                             focus:border-[#0056a6]
-                                             focus:ring-1
-                                             focus:ring-[#0056a6]"></textarea>
-
-                        </div>
-
-
-                        {{-- SUBMIT --}}
-                        <div class="mt-7">
-
-                            <button type="submit"
-                                    class="bg-[#0056a6]
-                                           text-white
-                                           px-7 py-3
-                                           font-semibold
-                                           rounded-sm
-                                           hover:bg-[#003f7d]
-                                           transition">
-
-                                Send Message
-
-                            </button>
-
-                        </div>
-
-                    </form>
-
-                </div>
+                </form>
 
             </div>
 
@@ -330,49 +405,104 @@
 
     </div>
 
+</div>
+
+
 </section>
 
+{{-- QUICK LINKS --}}
 
-{{-- =========================================================
-     MEMBERSHIP CTA
-========================================================= --}}
-<section class="bg-[#0056a6]">
+<section class="bg-white border-t border-gray-200">
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div class="py-12 flex flex-col md:flex-row
-                    items-center justify-between gap-6">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
 
-            <div class="text-white text-center md:text-left">
+    <div class="text-center max-w-2xl mx-auto">
 
-                <p class="text-sm font-semibold uppercase
-                          tracking-wider text-[#f4b400]">
-                    Interested in Joining?
-                </p>
+        <p class="text-sm font-semibold uppercase tracking-wider text-[#479F61]">
+            Explore Urban Roads SACCO
+        </p>
 
-                <h2 class="mt-2 text-2xl md:text-3xl font-bold">
-                    Become a Member of Urban Roads SACCO
-                </h2>
+        <h2 class="mt-2 text-2xl md:text-3xl font-bold text-[#2F7D47]">
+            Find the information you need
+        </h2>
 
-                <p class="text-blue-100 mt-2">
-                    Find out if you are eligible and learn how to join.
-                </p>
-
-            </div>
-
-            <a href="{{ route('membership') }}"
-               class="bg-white text-[#0056a6]
-                      px-7 py-3 font-semibold rounded-sm
-                      hover:bg-gray-100 transition">
-
-                Membership Information
-
-            </a>
-
-        </div>
+        <div class="w-12 h-1 bg-[#F7D928] mx-auto mt-4"></div>
 
     </div>
 
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-9">
+
+
+        {{-- ABOUT --}}
+        <a href="{{ route('about') }}"
+           class="border border-gray-200 p-6 text-center hover:border-[#479F61] hover:shadow-md transition group">
+
+            <h3 class="font-bold text-[#2F7D47] group-hover:text-[#479F61]">
+                About Us
+            </h3>
+
+            <p class="mt-2 text-sm text-gray-600">
+                Learn more about Urban Roads SACCO.
+            </p>
+
+        </a>
+
+
+        {{-- SERVICES --}}
+        <a href="{{ route('services') }}"
+           class="border border-gray-200 p-6 text-center hover:border-[#479F61] hover:shadow-md transition group">
+
+            <h3 class="font-bold text-[#2F7D47] group-hover:text-[#479F61]">
+                Our Services
+            </h3>
+
+            <p class="mt-2 text-sm text-gray-600">
+                Explore our member-focused services.
+            </p>
+
+        </a>
+
+
+        {{-- LOANS --}}
+        <a href="{{ route('loans') }}"
+           class="border border-gray-200 p-6 text-center hover:border-[#479F61] hover:shadow-md transition group">
+
+            <h3 class="font-bold text-[#2F7D47] group-hover:text-[#479F61]">
+                Loan Products
+            </h3>
+
+            <p class="mt-2 text-sm text-gray-600">
+                View available loan products.
+            </p>
+
+        </a>
+
+
+        {{-- MEMBERSHIP --}}
+        <a href="{{ route('membership') }}"
+           class="border border-gray-200 p-6 text-center hover:border-[#F7D928] hover:shadow-md transition group">
+
+            <h3 class="font-bold text-[#2F7D47] group-hover:text-[#479F61]">
+                Membership
+            </h3>
+
+            <p class="mt-2 text-sm text-gray-600">
+                Find out how to become a member.
+            </p>
+
+        </a>
+
+    </div>
+
+</div>
+
+
 </section>
+
+{{-- WHITE SEPARATOR BEFORE FOOTER --}}
+
+<div class="h-2 bg-white"></div>
 
 @endsection
