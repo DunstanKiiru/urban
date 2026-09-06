@@ -1,18 +1,83 @@
 @import "tailwindcss";
 
 :root {
-    --urban-blue: #0056a6;
-    --urban-blue-dark: #003f7d;
-    --urban-blue-light: #eaf3fb;
-    --urban-green: #168a45;
-    --urban-green-dark: #0f6b35;
-    --urban-gold: #f4b400;
-    --urban-gray: #f5f7fa;
-    --urban-text: #1f2937;
+    --urban-green: #479f61;
+    --urban-green-dark: #2f7d47;
+    --urban-green-light: #eaf5ed;
+
+    --urban-red: #d5595f;
+    --urban-red-dark: #b83f46;
+    --urban-red-light: #fbecee;
+
+    --urban-yellow: #f7d928;
+    --urban-yellow-dark: #d8b900;
+
+    --urban-charcoal: #3f4145;
+
+    --urban-gray: #f7f8f7;
+    --urban-gray-dark: #e5e7eb;
+
+    --urban-text: #252525;
+    --urban-text-light: #666666;
+
+    --white: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Inter", Arial, sans-serif;
-    background: #ffffff;
+    margin: 0;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    background: var(--white);
     color: var(--urban-text);
+    line-height: 1.6;
+}
+
+
+a {
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+::selection {
+    background: var(--urban-green);
+    color: var(--white);
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--urban-gray);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--urban-green);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--urban-green-dark);
 }
