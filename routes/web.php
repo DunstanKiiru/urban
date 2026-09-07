@@ -20,6 +20,8 @@ Route::view('/membership', 'membership')->name('membership');
 
 Route::view('/news', 'news')->name('news');
 
+Route::view('/documents', 'documents')->name('documents');
+
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::view('dashboard', 'dashboard')->name('dashboard');
 });
