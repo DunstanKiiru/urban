@@ -4,53 +4,22 @@
 
 @section('content')
 
-{{-- =========================================================
-     PAGE HEADER
-========================================================= --}}
-<section class="relative overflow-hidden bg-[#2F7D47]">
+{{-- PAGE HEADER --}}
+<section class="bg-[#3F4145]">
 
-    <div class="absolute -top-20 -right-20
-                w-64 h-64
-                rounded-full
-                bg-[#479F61]/30">
-    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
-    <div class="absolute -bottom-24 -left-20
-                w-72 h-72
-                rounded-full
-                bg-[#F7D928]/10">
-    </div>
-
-    <div class="relative max-w-7xl mx-auto
-                px-4 sm:px-6 lg:px-8
-                py-16 lg:py-20">
-
-        <p class="text-sm font-semibold
-                  uppercase
-                  tracking-wider
-                  text-[#F7D928]">
-
+        <p class="text-sm font-semibold uppercase tracking-wider text-[#F7D928]">
             About Urban Roads SACCO
-
         </p>
 
-        <h1 class="mt-3
-                   text-4xl md:text-5xl
-                   font-bold
-                   text-white">
-
+        <h1 class="mt-3 text-4xl md:text-5xl font-bold text-white">
             About Us
-
         </h1>
 
-        <p class="mt-5
-                  max-w-2xl
-                  text-[#EAF5ED]
-                  leading-relaxed">
-
-            Empowering members through savings, affordable credit
-            and quality financial services.
-
+        <p class="mt-5 max-w-3xl text-lg text-gray-200 leading-relaxed">
+            Building a stronger financial future through savings,
+            responsible lending and member-focused services.
         </p>
 
     </div>
@@ -58,150 +27,56 @@
 </section>
 
 
-{{-- =========================================================
-     WHO WE ARE
-========================================================= --}}
-<section class="py-20 bg-white">
+{{-- WHO WE ARE --}}
+<section class="py-16 bg-white">
 
-    <div class="max-w-7xl mx-auto
-                px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div class="grid lg:grid-cols-2
-                    gap-12 lg:gap-20
-                    items-center">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
 
-            {{-- CONTENT --}}
             <div>
 
-                <p class="text-sm font-semibold
-                          uppercase
-                          tracking-wider
-                          text-[#479F61]">
-
+                <p class="text-sm font-semibold uppercase tracking-wider text-[#479F61]">
                     Who We Are
-
                 </p>
 
-                <h2 class="mt-3
-                           text-3xl sm:text-4xl
-                           font-bold
-                           text-[#2F7D47]
-                           leading-tight">
-
-                    A SACCO Built Around
-                    <span class="block text-[#252525]">
-                        Its Members
-                    </span>
-
+                <h2 class="mt-3 text-3xl font-bold text-[#3F4145]">
+                    Working Together for Financial Growth
                 </h2>
 
-                <div class="w-12 h-1
-                            bg-[#F7D928]
-                            mt-5">
-                </div>
+                <div class="w-12 h-1 bg-[#D5595F] mt-5"></div>
 
-                <p class="mt-6
-                          text-gray-600
-                          leading-relaxed">
-
+                <p class="mt-6 text-gray-600 leading-relaxed">
                     Urban Roads SACCO is a member-focused Savings and Credit
-                    Cooperative Society committed to providing quality
-                    savings, credit and financial services to its members.
-
+                    Co-operative Society committed to providing quality
+                    financial services to its members.
                 </p>
 
-                <p class="mt-4
-                          text-gray-600
-                          leading-relaxed">
-
-                    We seek to create opportunities that enable our members
-                    to save, access affordable credit and improve their
-                    financial wellbeing.
-
-                </p>
-
-                <p class="mt-4
-                          text-gray-600
-                          leading-relaxed">
-
-                    Through responsible financial services and member
-                    engagement, the SACCO continues to support members in
-                    achieving their personal and financial aspirations.
-
+                <p class="mt-4 text-gray-600 leading-relaxed">
+                    Through a culture of saving, responsible borrowing and
+                    financial empowerment, we strive to help our members
+                    achieve their personal and financial goals.
                 </p>
 
             </div>
 
 
-            {{-- COMMITMENT CARD --}}
-            <div class="relative">
+            <div class="bg-[#EAF5ED] p-8 border-l-4 border-[#479F61]">
 
-                <div class="bg-[#F7F8F7]
-                            p-8 sm:p-10
-                            border-l-4
-                            border-[#479F61]">
+                <p class="text-sm font-semibold uppercase tracking-wide text-[#2F7D47]">
+                    Our Commitment
+                </p>
 
-                    <div class="w-14 h-1
-                                bg-[#F7D928]
-                                mb-7">
-                    </div>
+                <h3 class="mt-3 text-2xl font-bold text-[#3F4145]">
+                    Member First
+                </h3>
 
-                    <div class="w-14 h-14
-                                bg-[#EAF5ED]
-                                flex items-center justify-center
-                                mb-6">
-
-                        <img src="{{ asset('images/logo.png') }}"
-                             alt="Urban Roads SACCO Logo"
-                             class="w-12 h-12 object-contain">
-
-                    </div>
-
-                    <h3 class="text-2xl
-                               font-bold
-                               text-[#2F7D47]">
-
-                        Our Commitment
-
-                    </h3>
-
-                    <p class="mt-5
-                              text-gray-600
-                              leading-relaxed">
-
-                        We are committed to putting our members at the centre
-                        of what we do by providing reliable, accessible and
-                        sustainable financial solutions.
-
-                    </p>
-
-                    <div class="mt-7
-                                flex items-center gap-3">
-
-                        <div class="w-10 h-1
-                                    bg-[#479F61]">
-                        </div>
-
-                        <span class="text-sm
-                                     font-semibold
-                                     text-[#2F7D47]">
-
-                            Member First
-
-                        </span>
-
-                    </div>
-
-                </div>
-
-                <div class="absolute
-                            -bottom-3
-                            -right-3
-                            w-16 h-16
-                            border-r-4
-                            border-b-4
-                            border-[#F7D928]">
-                </div>
+                <p class="mt-4 text-gray-600 leading-relaxed">
+                    We believe that a strong SACCO is built around its members.
+                    Our focus is therefore on providing accessible financial
+                    solutions, dependable service and opportunities for members
+                    to improve their financial wellbeing.
+                </p>
 
             </div>
 
@@ -212,175 +87,45 @@
 </section>
 
 
-{{-- =========================================================
-     MISSION VISION VALUES
-========================================================= --}}
-<section class="py-20 bg-[#F7F8F7]">
+{{-- VISION / MISSION --}}
+<section class="py-16 bg-[#F7F8F7]">
 
-    <div class="max-w-7xl mx-auto
-                px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div class="text-center mb-12">
+        <div class="grid md:grid-cols-2 gap-8">
 
-            <p class="text-sm font-semibold
-                      uppercase
-                      tracking-wider
-                      text-[#479F61]">
-                Our Foundation
-            </p>
+            <div class="bg-white p-8 border-t-4 border-[#479F61] shadow-sm">
 
-            <h2 class="mt-3
-                       text-3xl sm:text-4xl
-                       font-bold
-                       text-[#2F7D47]">
-                What Guides Us
-            </h2>
-
-            <div class="w-12 h-1
-                        bg-[#F7D928]
-                        mx-auto mt-4">
-            </div>
-
-        </div>
-
-
-        <div class="grid md:grid-cols-3
-                    gap-6">
-
-            {{-- VISION --}}
-            <div class="bg-white
-                        border border-gray-200
-                        p-8
-                        hover:border-[#479F61]
-                        hover:shadow-lg
-                        transition-all duration-200">
-
-                <div class="w-14 h-14
-                            bg-[#EAF5ED]
-                            text-[#2F7D47]
-                            flex items-center justify-center
-                            font-bold text-lg">
-
-                    V
-
-                </div>
-
-                <h3 class="mt-6
-                           text-xl font-bold
-                           text-[#2F7D47]">
-
+                <p class="text-sm font-semibold uppercase tracking-wide text-[#479F61]">
                     Our Vision
+                </p>
 
-                </h3>
+                <h2 class="mt-3 text-2xl font-bold text-[#3F4145]">
+                    A Better Financial Future for Our Members
+                </h2>
 
-                <p class="mt-4
-                          text-gray-600
-                          leading-relaxed">
-
-                    To be a trusted and leading member-focused SACCO,
-                    creating lasting financial opportunities for our
-                    members.
-
+                <p class="mt-4 text-gray-600 leading-relaxed">
+                    To be a trusted and progressive SACCO providing sustainable
+                    financial opportunities and value to its members.
                 </p>
 
             </div>
 
 
-            {{-- MISSION --}}
-            <div class="bg-white
-                        border border-gray-200
-                        p-8
-                        hover:border-[#479F61]
-                        hover:shadow-lg
-                        transition-all duration-200">
+            <div class="bg-white p-8 border-t-4 border-[#D5595F] shadow-sm">
 
-                <div class="w-14 h-14
-                            bg-[#FBECEE]
-                            text-[#D5595F]
-                            flex items-center justify-center
-                            font-bold text-lg">
-
-                    M
-
-                </div>
-
-                <h3 class="mt-6
-                           text-xl font-bold
-                           text-[#2F7D47]">
-
+                <p class="text-sm font-semibold uppercase tracking-wide text-[#D5595F]">
                     Our Mission
-
-                </h3>
-
-                <p class="mt-4
-                          text-gray-600
-                          leading-relaxed">
-
-                    To provide quality savings, credit and financial
-                    services that empower our members to achieve their
-                    financial goals.
-
                 </p>
 
-            </div>
+                <h2 class="mt-3 text-2xl font-bold text-[#3F4145]">
+                    Empowering Members Through Financial Services
+                </h2>
 
-
-            {{-- VALUES --}}
-            <div class="bg-white
-                        border border-gray-200
-                        p-8
-                        hover:border-[#F7D928]
-                        hover:shadow-lg
-                        transition-all duration-200">
-
-                <div class="w-14 h-14
-                            bg-[#FFF9D9]
-                            text-[#D8B900]
-                            flex items-center justify-center
-                            font-bold text-lg">
-
-                    V
-
-                </div>
-
-                <h3 class="mt-6
-                           text-xl font-bold
-                           text-[#2F7D47]">
-
-                    Our Values
-
-                </h3>
-
-                <ul class="mt-5
-                           space-y-3
-                           text-gray-600">
-
-                    <li class="flex items-center gap-3">
-                        <span class="w-2 h-2 rounded-full bg-[#479F61]"></span>
-                        Integrity
-                    </li>
-
-                    <li class="flex items-center gap-3">
-                        <span class="w-2 h-2 rounded-full bg-[#479F61]"></span>
-                        Transparency
-                    </li>
-
-                    <li class="flex items-center gap-3">
-                        <span class="w-2 h-2 rounded-full bg-[#479F61]"></span>
-                        Accountability
-                    </li>
-
-                    <li class="flex items-center gap-3">
-                        <span class="w-2 h-2 rounded-full bg-[#479F61]"></span>
-                        Member Focus
-                    </li>
-
-                    <li class="flex items-center gap-3">
-                        <span class="w-2 h-2 rounded-full bg-[#479F61]"></span>
-                        Professionalism
-                    </li>
-
-                </ul>
+                <p class="mt-4 text-gray-600 leading-relaxed">
+                    To provide quality savings, credit and related financial
+                    services that promote the economic wellbeing of our members.
+                </p>
 
             </div>
 
@@ -391,172 +136,74 @@
 </section>
 
 
-{{-- =========================================================
-     WHAT WE DO
-========================================================= --}}
-<section class="py-20 bg-white">
+{{-- VALUES --}}
+<section class="py-16 bg-white">
 
-    <div class="max-w-6xl mx-auto
-                px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div class="text-center">
 
-            <p class="text-sm font-semibold
-                      uppercase
-                      tracking-wider
-                      text-[#479F61]">
-
-                What We Do
-
+            <p class="text-sm font-semibold uppercase tracking-wider text-[#479F61]">
+                What Guides Us
             </p>
 
-            <h2 class="mt-3
-                       text-3xl sm:text-4xl
-                       font-bold
-                       text-[#2F7D47]">
-
-                Supporting Our Members
-
+            <h2 class="mt-3 text-3xl font-bold text-[#3F4145]">
+                Our Values
             </h2>
 
-            <div class="w-12 h-1
-                        bg-[#F7D928]
-                        mx-auto mt-4">
-            </div>
-
-            <p class="mt-5
-                      max-w-2xl
-                      mx-auto
-                      text-gray-600
-                      leading-relaxed">
-
-                Our services are designed to help members build financial
-                stability and access opportunities when they need them.
-
-            </p>
+            <div class="w-12 h-1 bg-[#F7D928] mx-auto mt-4"></div>
 
         </div>
 
 
-        <div class="grid md:grid-cols-3
-                    gap-6
-                    mt-12">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
 
-            {{-- SAVINGS --}}
-            <div class="text-center
-                        p-8
-                        border border-gray-100
-                        hover:border-[#479F61]
-                        hover:shadow-md
-                        transition-all duration-200">
-
-                <div class="mx-auto w-14 h-14
-                            bg-[#EAF5ED]
-                            text-[#2F7D47]
-                            flex items-center justify-center
-                            font-bold">
-
-                    01
-
+            <div class="p-7 border border-gray-200 hover:border-[#479F61] hover:shadow-md transition">
+                <div class="w-12 h-12 bg-[#EAF5ED] text-[#2F7D47] flex items-center justify-center font-bold">
+                    I
                 </div>
-
-                <h3 class="mt-6
-                           text-lg font-bold
-                           text-[#2F7D47]">
-
-                    Encourage Savings
-
+                <h3 class="mt-5 text-xl font-bold text-[#3F4145]">
+                    Integrity
                 </h3>
-
-                <p class="mt-3
-                          text-sm
-                          text-gray-600
-                          leading-relaxed">
-
-                    We encourage members to develop a consistent savings
-                    culture and build their financial security.
-
+                <p class="mt-3 text-sm text-gray-600">
+                    We uphold honesty, transparency and accountability.
                 </p>
-
             </div>
 
-
-            {{-- CREDIT --}}
-            <div class="text-center
-                        p-8
-                        border border-gray-100
-                        hover:border-[#D5595F]
-                        hover:shadow-md
-                        transition-all duration-200">
-
-                <div class="mx-auto w-14 h-14
-                            bg-[#FBECEE]
-                            text-[#D5595F]
-                            flex items-center justify-center
-                            font-bold">
-
-                    02
-
+            <div class="p-7 border border-gray-200 hover:border-[#D5595F] hover:shadow-md transition">
+                <div class="w-12 h-12 bg-[#FBECEE] text-[#B83F46] flex items-center justify-center font-bold">
+                    M
                 </div>
-
-                <h3 class="mt-6
-                           text-lg font-bold
-                           text-[#2F7D47]">
-
-                    Provide Credit
-
+                <h3 class="mt-5 text-xl font-bold text-[#3F4145]">
+                    Member Focus
                 </h3>
-
-                <p class="mt-3
-                          text-sm
-                          text-gray-600
-                          leading-relaxed">
-
-                    We provide a range of loan products designed to support
-                    different member financial needs.
-
+                <p class="mt-3 text-sm text-gray-600">
+                    Our members remain at the centre of what we do.
                 </p>
-
             </div>
 
-
-            {{-- EMPOWERMENT --}}
-            <div class="text-center
-                        p-8
-                        border border-gray-100
-                        hover:border-[#F7D928]
-                        hover:shadow-md
-                        transition-all duration-200">
-
-                <div class="mx-auto w-14 h-14
-                            bg-[#FFF9D9]
-                            text-[#D8B900]
-                            flex items-center justify-center
-                            font-bold">
-
-                    03
-
+            <div class="p-7 border border-gray-200 hover:border-[#F7D928] hover:shadow-md transition">
+                <div class="w-12 h-12 bg-[#FFF9D9] text-[#A98C00] flex items-center justify-center font-bold">
+                    R
                 </div>
-
-                <h3 class="mt-6
-                           text-lg font-bold
-                           text-[#2F7D47]">
-
-                    Empower Members
-
+                <h3 class="mt-5 text-xl font-bold text-[#3F4145]">
+                    Responsibility
                 </h3>
-
-                <p class="mt-3
-                          text-sm
-                          text-gray-600
-                          leading-relaxed">
-
-                    We support members through financial services,
-                    information and programmes that promote better
-                    financial wellbeing.
-
+                <p class="mt-3 text-sm text-gray-600">
+                    We promote responsible saving, borrowing and financial management.
                 </p>
+            </div>
 
+            <div class="p-7 border border-gray-200 hover:border-[#479F61] hover:shadow-md transition">
+                <div class="w-12 h-12 bg-[#EAF5ED] text-[#2F7D47] flex items-center justify-center font-bold">
+                    E
+                </div>
+                <h3 class="mt-5 text-xl font-bold text-[#3F4145]">
+                    Excellence
+                </h3>
+                <p class="mt-3 text-sm text-gray-600">
+                    We continuously strive to improve our services.
+                </p>
             </div>
 
         </div>
@@ -566,67 +213,29 @@
 </section>
 
 
-{{-- =========================================================
-     MEMBERSHIP CTA
-========================================================= --}}
-<section class="bg-[#2F7D47]">
+{{-- CTA --}}
+<section class="bg-[#479F61]">
 
-    <div class="max-w-7xl mx-auto
-                px-4 sm:px-6 lg:px-8
-                py-14">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-14 text-center">
 
-        <div class="flex flex-col
-                    md:flex-row
-                    md:items-center
-                    md:justify-between
-                    gap-7">
+        <p class="text-sm font-semibold uppercase tracking-wider text-[#F7D928]">
+            Join Us
+        </p>
 
-            <div class="text-white">
+        <h2 class="mt-3 text-3xl md:text-4xl font-bold text-white">
+            Become Part of Urban Roads SACCO
+        </h2>
 
-                <p class="text-sm font-semibold
-                          uppercase
-                          tracking-wider
-                          text-[#F7D928]">
+        <p class="mt-4 text-green-50">
+            Learn about eligibility and how you can become a member.
+        </p>
 
-                    Membership
-
-                </p>
-
-                <h2 class="mt-2
-                           text-2xl md:text-3xl
-                           font-bold">
-
-                    Interested in becoming a member?
-
-                </h2>
-
-                <p class="mt-2
-                          text-[#EAF5ED]">
-
-                    Find out if you qualify and learn how to join
-                    Urban Roads SACCO.
-
-                </p>
-
-            </div>
-
-            <a href="{{ route('membership') }}"
-               class="shrink-0
-                      inline-flex items-center justify-center gap-2
-                      bg-white
-                      text-[#2F7D47]
-                      px-7 py-3.5
-                      font-semibold
-                      hover:bg-[#F7D928]
-                      hover:text-[#252525]
-                      transition-all duration-200">
-
-                Membership Information
-                <span>→</span>
-
-            </a>
-
-        </div>
+        <a href="{{ route('membership') }}"
+           class="inline-block mt-7 bg-white text-[#2F7D47]
+                  px-7 py-3 font-semibold rounded-sm
+                  hover:bg-[#F7D928] hover:text-[#252525] transition">
+            Membership Information
+        </a>
 
     </div>
 

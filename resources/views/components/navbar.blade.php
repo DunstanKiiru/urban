@@ -1,5 +1,8 @@
 <nav class="bg-white border-b border-gray-200">
 
+    {{-- =====================================================
+         TOP CONTACT BAR
+    ====================================================== --}}
     <div class="bg-[#2F7D47]">
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

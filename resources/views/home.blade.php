@@ -7,100 +7,70 @@
 {{-- =========================================================
      HERO SECTION
 ========================================================= --}}
-<section class="relative overflow-hidden bg-[#2F7D47]">
+<section class="bg-[#479F61]">
 
-    {{-- Decorative background elements --}}
-    <div class="absolute -top-24 -right-24 w-72 h-72
-                rounded-full bg-[#479F61]/30">
-    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-    <div class="absolute -bottom-32 -left-20 w-80 h-80
-                rounded-full bg-[#F7D928]/10">
-    </div>
-
-    <div class="relative max-w-7xl mx-auto
-                px-4 sm:px-6 lg:px-8">
-
-        <div class="grid lg:grid-cols-2
-                    gap-12 lg:gap-16
-                    items-center
-                    min-h-[560px]
-                    py-16 lg:py-20">
+        <div class="grid lg:grid-cols-2 gap-12
+                    items-center py-20 lg:py-24">
 
             {{-- HERO CONTENT --}}
             <div class="text-white">
 
-                <div class="inline-flex items-center gap-2
-                            px-3 py-1.5
-                            bg-white/10
-                            border border-white/20
-                            text-sm font-medium">
-
-                    <span class="w-2 h-2 rounded-full bg-[#F7D928]"></span>
+                <p class="text-sm font-semibold uppercase
+                          tracking-wider text-[#F7D928]">
 
                     Welcome to Urban Roads SACCO
-                </div>
 
-                <h1 class="mt-6
-                           text-4xl sm:text-5xl lg:text-6xl
-                           font-bold
-                           leading-[1.08]
-                           tracking-tight">
+                </p>
+
+                <h1 class="mt-4 text-4xl md:text-5xl
+                           font-bold leading-tight">
 
                     Empowering Members.
-                    <span class="block text-[#F7D928]">
+                    
+                    <span class="text-[#F7D928]">
                         Building Futures.
                     </span>
 
                 </h1>
 
-                <p class="mt-6
-                          max-w-xl
-                          text-base sm:text-lg
-                          text-[#EAF5ED]
-                          leading-relaxed">
+                <p class="mt-6 text-lg text-green-50
+                          leading-relaxed max-w-xl">
 
                     A member-focused Savings and Credit Cooperative Society
-                    committed to providing quality savings, affordable credit
-                    and financial services that help members achieve their goals.
+                    committed to providing quality savings, credit and
+                    financial services.
 
                 </p>
 
                 <div class="mt-8 flex flex-wrap gap-4">
 
-                    {{-- PRIMARY CTA --}}
                     <a href="{{ route('membership') }}"
-                       class="inline-flex items-center justify-center
-                              gap-2
-                              bg-white
+                       class="bg-white
                               text-[#2F7D47]
-                              px-6 py-3.5
+                              px-6 py-3
                               font-semibold
-                              shadow-sm
+                              rounded-sm
                               hover:bg-[#F7D928]
                               hover:text-[#252525]
-                              hover:-translate-y-0.5
-                              transition-all duration-200">
+                              transition">
 
                         Become a Member
 
-                        <span aria-hidden="true">→</span>
-
                     </a>
 
-                    {{-- SECONDARY CTA --}}
-                    <a href="{{ route('loans') }}"
-                       class="inline-flex items-center justify-center
-                              gap-2
-                              border border-white/70
+                    <a href="{{ route('about') }}"
+                       class="border-2 border-white
                               text-white
-                              px-6 py-3.5
+                              px-6 py-3
                               font-semibold
+                              rounded-sm
                               hover:bg-white
                               hover:text-[#2F7D47]
-                              transition-all duration-200">
+                              transition">
 
-                        Explore Loans
+                        Learn More
 
                     </a>
 
@@ -110,215 +80,45 @@
 
 
             {{-- HERO INFORMATION CARD --}}
-            <div class="hidden lg:block">
+            <div class="hidden lg:flex justify-end">
 
-                <div class="relative max-w-md ml-auto">
+                <div class="bg-white p-8 w-full max-w-md shadow-xl">
 
-                    {{-- Yellow accent --}}
-                    <div class="absolute -top-3 -left-3
-                                w-20 h-20
-                                border-t-4 border-l-4
-                                border-[#F7D928]">
-                    </div>
+                    <div class="w-14 h-1 bg-[#D5595F] mb-6"></div>
 
-                    <div class="relative
-                                bg-white
-                                p-8
-                                shadow-2xl">
+                    <p class="text-sm font-semibold uppercase
+                              tracking-wide text-[#479F61]">
 
-                        <div class="flex items-center gap-4">
+                        Your SACCO
 
-                            <div class="w-14 h-14
-                                        rounded-full
-                                        bg-[#EAF5ED]
-                                        flex items-center justify-center
-                                        shrink-0">
-
-                                <img src="{{ asset('images/logo.png') }}"
-                                     alt="Urban Roads SACCO"
-                                     class="w-12 h-12 object-contain">
-
-                            </div>
-
-                            <div>
-
-                                <p class="text-xs
-                                          uppercase
-                                          tracking-wider
-                                          font-semibold
-                                          text-[#479F61]">
-                                    Your SACCO
-                                </p>
-
-                                <h2 class="mt-1
-                                           text-xl
-                                           font-bold
-                                           text-[#2F7D47]">
-                                    Your Financial Partner
-                                </h2>
-
-                            </div>
-
-                        </div>
-
-                        <div class="w-12 h-1
-                                    bg-[#F7D928]
-                                    mt-7">
-                        </div>
-
-                        <p class="mt-5
-                                  text-gray-600
-                                  leading-relaxed">
-
-                            We provide members with opportunities to save,
-                            access affordable credit and improve their
-                            financial wellbeing.
-
-                        </p>
-
-
-                        {{-- CARD FEATURES --}}
-                        <div class="mt-7
-                                    grid grid-cols-2
-                                    gap-3">
-
-                            <div class="p-4 bg-[#EAF5ED]">
-
-                                <p class="text-2xl font-bold
-                                          text-[#2F7D47]">
-                                    Save
-                                </p>
-
-                                <p class="mt-1 text-xs text-gray-600">
-                                    Build your financial future
-                                </p>
-
-                            </div>
-
-                            <div class="p-4 bg-[#F7F8F7]">
-
-                                <p class="text-2xl font-bold
-                                          text-[#D5595F]">
-                                    Grow
-                                </p>
-
-                                <p class="mt-1 text-xs text-gray-600">
-                                    Access member solutions
-                                </p>
-
-                            </div>
-
-                        </div>
-
-
-                        <a href="{{ route('services') }}"
-                           class="inline-flex items-center gap-2
-                                  mt-7
-                                  text-[#2F7D47]
-                                  font-semibold
-                                  hover:text-[#479F61]
-                                  transition-colors">
-
-                            Explore Our Services
-
-                            <span aria-hidden="true">→</span>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-{{-- =========================================================
-     QUICK BENEFITS STRIP
-========================================================= --}}
-<section class="bg-white border-b border-gray-100">
-
-    <div class="max-w-7xl mx-auto
-                px-4 sm:px-6 lg:px-8">
-
-        <div class="grid sm:grid-cols-3">
-
-            <div class="flex items-center gap-4
-                        py-6 sm:px-6
-                        border-b sm:border-b-0
-                        sm:border-r border-gray-100">
-
-                <div class="w-11 h-11
-                            bg-[#EAF5ED]
-                            text-[#2F7D47]
-                            flex items-center justify-center
-                            font-bold shrink-0">
-                    01
-                </div>
-
-                <div>
-                    <h3 class="font-bold text-[#252525]">
-                        Member Focused
-                    </h3>
-
-                    <p class="text-sm text-gray-500 mt-0.5">
-                        Your needs come first
                     </p>
-                </div>
 
-            </div>
+                    <h2 class="mt-2 text-2xl font-bold
+                               text-[#3F4145]">
 
+                        Your Financial Partner
 
-            <div class="flex items-center gap-4
-                        py-6 sm:px-6
-                        border-b sm:border-b-0
-                        sm:border-r border-gray-100">
+                    </h2>
 
-                <div class="w-11 h-11
-                            bg-[#FFF9D9]
-                            text-[#D8B900]
-                            flex items-center justify-center
-                            font-bold shrink-0">
-                    02
-                </div>
+                    <p class="text-gray-600 mt-4 leading-relaxed">
 
-                <div>
-                    <h3 class="font-bold text-[#252525]">
-                        Affordable Credit
-                    </h3>
+                        We provide members with opportunities to save,
+                        access affordable credit and improve their
+                        financial wellbeing.
 
-                    <p class="text-sm text-gray-500 mt-0.5">
-                        Flexible financial solutions
                     </p>
-                </div>
 
-            </div>
+                    <a href="{{ route('services') }}"
+                       class="inline-block mt-6
+                              text-[#2F7D47]
+                              font-semibold
+                              hover:text-[#D5595F]
+                              hover:underline">
 
+                        Explore Our Services →
 
-            <div class="flex items-center gap-4
-                        py-6 sm:px-6">
+                    </a>
 
-                <div class="w-11 h-11
-                            bg-[#FBECEE]
-                            text-[#D5595F]
-                            flex items-center justify-center
-                            font-bold shrink-0">
-                    03
-                </div>
-
-                <div>
-                    <h3 class="font-bold text-[#252525]">
-                        Financial Growth
-                    </h3>
-
-                    <p class="text-sm text-gray-500 mt-0.5">
-                        Save today, grow tomorrow
-                    </p>
                 </div>
 
             </div>
@@ -333,173 +133,48 @@
 {{-- =========================================================
      ABOUT SECTION
 ========================================================= --}}
-<section class="py-20 bg-white">
+<section class="py-16 bg-white">
 
-    <div class="max-w-7xl mx-auto
-                px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div class="grid lg:grid-cols-2
-                    gap-12 lg:gap-20
-                    items-center">
+        <div class="max-w-3xl mx-auto text-center">
 
-            {{-- CONTENT --}}
-            <div>
+            <p class="text-sm font-semibold uppercase
+                      tracking-wider text-[#479F61]">
 
-                <p class="text-sm font-semibold
-                          uppercase
-                          tracking-wider
-                          text-[#479F61]">
-                    About Urban Roads SACCO
-                </p>
+                About Us
 
-                <h2 class="mt-3
-                           text-3xl sm:text-4xl
-                           font-bold
-                           text-[#2F7D47]
-                           leading-tight">
+            </p>
 
-                    Working Together for a Better
-                    <span class="block text-[#252525]">
-                        Financial Future
-                    </span>
+            <h2 class="mt-3 text-3xl font-bold text-[#3F4145]">
 
-                </h2>
+                Working Together for a Better
+                Financial Future
 
-                <div class="w-12 h-1
-                            bg-[#F7D928]
-                            mt-5">
-                </div>
+            </h2>
 
-                <p class="mt-6
-                          text-gray-600
-                          leading-relaxed">
-
-                    Urban Roads SACCO provides savings, credit and other
-                    financial services designed to support the needs,
-                    ambitions and aspirations of its members.
-
-                </p>
-
-                <p class="mt-4
-                          text-gray-600
-                          leading-relaxed">
-
-                    Through responsible financial services and member
-                    engagement, we seek to create opportunities that enable
-                    our members to save, access affordable credit and improve
-                    their financial wellbeing.
-
-                </p>
-
-                <a href="{{ route('about') }}"
-                   class="inline-flex items-center gap-2
-                          mt-7
-                          font-semibold
-                          text-[#2F7D47]
-                          hover:text-[#479F61]
-                          transition-colors">
-
-                    Read More About Us
-
-                    <span aria-hidden="true">→</span>
-
-                </a>
-
+            <div class="w-12 h-1 bg-[#D5595F]
+                        mx-auto mt-5">
             </div>
 
+            <p class="mt-6 text-gray-600 leading-relaxed">
 
-            {{-- VISUAL PANEL --}}
-            <div class="relative">
+                Urban Roads SACCO provides savings, credit and other
+                financial services designed to support the needs and
+                aspirations of its members.
 
-                <div class="bg-[#F7F8F7]
-                            p-8 sm:p-10">
+            </p>
 
-                    <div class="grid grid-cols-2 gap-5">
+            <a href="{{ route('about') }}"
+               class="inline-block mt-6
+                      text-[#2F7D47]
+                      font-semibold
+                      hover:text-[#D5595F]
+                      hover:underline">
 
-                        <div class="bg-white p-6
-                                    border-t-4 border-[#479F61]
-                                    shadow-sm">
+                Read More About Us →
 
-                            <div class="text-3xl font-bold
-                                        text-[#2F7D47]">
-                                Save
-                            </div>
-
-                            <p class="mt-2
-                                      text-sm
-                                      text-gray-600">
-                                Develop a strong savings culture.
-                            </p>
-
-                        </div>
-
-
-                        <div class="bg-white p-6
-                                    border-t-4 border-[#F7D928]
-                                    shadow-sm">
-
-                            <div class="text-3xl font-bold
-                                        text-[#D8B900]">
-                                Access
-                            </div>
-
-                            <p class="mt-2
-                                      text-sm
-                                      text-gray-600">
-                                Get access to affordable credit.
-                            </p>
-
-                        </div>
-
-
-                        <div class="bg-white p-6
-                                    border-t-4 border-[#D5595F]
-                                    shadow-sm">
-
-                            <div class="text-3xl font-bold
-                                        text-[#D5595F]">
-                                Grow
-                            </div>
-
-                            <p class="mt-2
-                                      text-sm
-                                      text-gray-600">
-                                Work towards your financial goals.
-                            </p>
-
-                        </div>
-
-
-                        <div class="bg-[#2F7D47]
-                                    p-6
-                                    text-white">
-
-                            <div class="text-3xl font-bold">
-                                Together
-                            </div>
-
-                            <p class="mt-2
-                                      text-sm
-                                      text-[#EAF5ED]">
-                                Stronger through cooperative growth.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="absolute
-                            -bottom-3
-                            -right-3
-                            w-16 h-16
-                            border-r-4
-                            border-b-4
-                            border-[#F7D928]">
-                </div>
-
-            </div>
+            </a>
 
         </div>
 
@@ -511,97 +186,73 @@
 {{-- =========================================================
      SERVICES SECTION
 ========================================================= --}}
-<section class="py-20 bg-[#F7F8F7]">
+<section class="py-16 bg-[#F7F8F7]">
 
-    <div class="max-w-7xl mx-auto
-                px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div class="text-center">
 
-            <p class="text-sm font-semibold
-                      uppercase
-                      tracking-wider
-                      text-[#479F61]">
+            <p class="text-sm font-semibold uppercase
+                      tracking-wider text-[#479F61]">
+
                 What We Offer
+
             </p>
 
-            <h2 class="mt-3
-                       text-3xl sm:text-4xl
-                       font-bold
-                       text-[#2F7D47]">
+            <h2 class="mt-3 text-3xl font-bold text-[#3F4145]">
+
                 Our Services
+
             </h2>
 
-            <div class="w-12 h-1
-                        bg-[#F7D928]
+            <div class="w-12 h-1 bg-[#D5595F]
                         mx-auto mt-4">
             </div>
-
-            <p class="mt-5
-                      max-w-2xl
-                      mx-auto
-                      text-gray-600
-                      leading-relaxed">
-
-                Financial solutions designed around the needs
-                and aspirations of our members.
-
-            </p>
 
         </div>
 
 
-        <div class="grid md:grid-cols-3
-                    gap-6
-                    mt-12">
+        <div class="grid md:grid-cols-3 gap-6 mt-10">
+
 
             {{-- SAVINGS --}}
             <a href="{{ route('services') }}"
-               class="group bg-white
-                      border border-gray-200
+               class="bg-white border border-gray-200
                       p-7
                       hover:border-[#479F61]
-                      hover:shadow-lg
-                      hover:-translate-y-1
-                      transition-all duration-300">
+                      hover:shadow-md
+                      transition group">
 
-                <div class="w-14 h-14
+                <div class="w-12 h-12
                             bg-[#EAF5ED]
                             text-[#2F7D47]
                             flex items-center justify-center
-                            font-bold text-lg
-                            group-hover:bg-[#2F7D47]
-                            group-hover:text-white
-                            transition-colors">
+                            font-bold">
 
                     S
 
                 </div>
 
-                <h3 class="mt-6
-                           text-xl font-bold
-                           text-[#2F7D47]">
+                <h3 class="mt-5 text-xl font-bold text-[#3F4145]">
+
                     Savings
+
                 </h3>
 
-                <p class="mt-3
-                          text-gray-600
-                          text-sm
-                          leading-relaxed">
+                <p class="mt-3 text-gray-600 text-sm leading-relaxed">
 
-                    Save consistently and build a stronger
-                    financial foundation for your future.
+                    Save consistently and build a stronger financial
+                    foundation for your future.
 
                 </p>
 
-                <span class="inline-flex items-center gap-2
-                             mt-6
-                             text-sm
-                             font-semibold
-                             text-[#479F61]">
+                <span class="inline-block mt-5
+                             text-sm font-semibold
+                             text-[#2F7D47]
+                             group-hover:text-[#D5595F]
+                             group-hover:underline">
 
-                    Learn More
-                    <span>→</span>
+                    Learn More →
 
                 </span>
 
@@ -610,51 +261,41 @@
 
             {{-- LOANS --}}
             <a href="{{ route('loans') }}"
-               class="group bg-white
-                      border border-gray-200
+               class="bg-white border border-gray-200
                       p-7
                       hover:border-[#D5595F]
-                      hover:shadow-lg
-                      hover:-translate-y-1
-                      transition-all duration-300">
+                      hover:shadow-md
+                      transition group">
 
-                <div class="w-14 h-14
+                <div class="w-12 h-12
                             bg-[#FBECEE]
-                            text-[#D5595F]
+                            text-[#B83F46]
                             flex items-center justify-center
-                            font-bold text-lg
-                            group-hover:bg-[#D5595F]
-                            group-hover:text-white
-                            transition-colors">
+                            font-bold">
 
                     L
 
                 </div>
 
-                <h3 class="mt-6
-                           text-xl font-bold
-                           text-[#2F7D47]">
+                <h3 class="mt-5 text-xl font-bold text-[#3F4145]">
+
                     Loans & Credit
+
                 </h3>
 
-                <p class="mt-3
-                          text-gray-600
-                          text-sm
-                          leading-relaxed">
+                <p class="mt-3 text-gray-600 text-sm leading-relaxed">
 
                     Access flexible financing solutions designed
                     to meet different member needs.
 
                 </p>
 
-                <span class="inline-flex items-center gap-2
-                             mt-6
-                             text-sm
-                             font-semibold
-                             text-[#D5595F]">
+                <span class="inline-block mt-5
+                             text-sm font-semibold
+                             text-[#B83F46]
+                             group-hover:underline">
 
-                    View Loan Products
-                    <span>→</span>
+                    View Loan Products →
 
                 </span>
 
@@ -663,51 +304,41 @@
 
             {{-- MEMBERSHIP --}}
             <a href="{{ route('membership') }}"
-               class="group bg-white
-                      border border-gray-200
+               class="bg-white border border-gray-200
                       p-7
-                      hover:border-[#F7D928]
-                      hover:shadow-lg
-                      hover:-translate-y-1
-                      transition-all duration-300">
+                      hover:border-[#D8B900]
+                      hover:shadow-md
+                      transition group">
 
-                <div class="w-14 h-14
+                <div class="w-12 h-12
                             bg-[#FFF9D9]
-                            text-[#D8B900]
+                            text-[#A98C00]
                             flex items-center justify-center
-                            font-bold text-lg
-                            group-hover:bg-[#F7D928]
-                            group-hover:text-[#252525]
-                            transition-colors">
+                            font-bold">
 
                     M
 
                 </div>
 
-                <h3 class="mt-6
-                           text-xl font-bold
-                           text-[#2F7D47]">
+                <h3 class="mt-5 text-xl font-bold text-[#3F4145]">
+
                     Membership
+
                 </h3>
 
-                <p class="mt-3
-                          text-gray-600
-                          text-sm
-                          leading-relaxed">
+                <p class="mt-3 text-gray-600 text-sm leading-relaxed">
 
-                    Join Urban Roads SACCO and become part
-                    of our growing member community.
+                    Join Urban Roads SACCO and become part of our
+                    growing member community.
 
                 </p>
 
-                <span class="inline-flex items-center gap-2
-                             mt-6
-                             text-sm
-                             font-semibold
-                             text-[#D8B900]">
+                <span class="inline-block mt-5
+                             text-sm font-semibold
+                             text-[#A98C00]
+                             group-hover:underline">
 
-                    Become a Member
-                    <span>→</span>
+                    Become a Member →
 
                 </span>
 
@@ -719,139 +350,15 @@
         <div class="text-center mt-10">
 
             <a href="{{ route('services') }}"
-               class="inline-flex items-center gap-2
-                      font-semibold
+               class="inline-block
                       text-[#2F7D47]
-                      hover:text-[#479F61]
-                      transition-colors">
+                      font-semibold
+                      hover:text-[#D5595F]
+                      hover:underline">
 
-                View All Services
-
-                <span>→</span>
+                View All Services →
 
             </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-{{-- =========================================================
-     LOAN PRODUCTS HIGHLIGHT
-========================================================= --}}
-<section class="py-20 bg-white">
-
-    <div class="max-w-7xl mx-auto
-                px-4 sm:px-6 lg:px-8">
-
-        <div class="flex flex-col
-                    md:flex-row
-                    md:items-end
-                    md:justify-between
-                    gap-5">
-
-            <div>
-
-                <p class="text-sm font-semibold
-                          uppercase
-                          tracking-wider
-                          text-[#479F61]">
-                    Financial Solutions
-                </p>
-
-                <h2 class="mt-3
-                           text-3xl sm:text-4xl
-                           font-bold
-                           text-[#2F7D47]">
-                    Loan Products
-                </h2>
-
-                <div class="w-12 h-1
-                            bg-[#F7D928]
-                            mt-4">
-                </div>
-
-            </div>
-
-            <a href="{{ route('loans') }}"
-               class="inline-flex items-center gap-2
-                      font-semibold
-                      text-[#2F7D47]
-                      hover:text-[#479F61]">
-
-                View All Loans
-                <span>→</span>
-
-            </a>
-
-        </div>
-
-
-        <div class="grid sm:grid-cols-2
-                    lg:grid-cols-4
-                    gap-5
-                    mt-10">
-
-            @foreach([
-                ['Normal Loan', 'Flexible financing for your planned needs.', 'N'],
-                ['Super ROUSA', 'A solution designed for eligible member needs.', 'R'],
-                ['Emergency Loan', 'Financial assistance when unexpected needs arise.', 'E'],
-                ['School Fees Loan', 'Support for your education-related expenses.', 'S'],
-            ] as $loan)
-
-                <a href="{{ route('loans') }}"
-                   class="group p-6
-                          border border-gray-200
-                          hover:border-[#479F61]
-                          hover:shadow-md
-                          transition-all duration-200">
-
-                    <div class="w-10 h-10
-                                bg-[#EAF5ED]
-                                text-[#2F7D47]
-                                flex items-center justify-center
-                                font-bold
-                                group-hover:bg-[#2F7D47]
-                                group-hover:text-white
-                                transition-colors">
-
-                        {{ $loan[2] }}
-
-                    </div>
-
-                    <h3 class="mt-5
-                               font-bold
-                               text-[#2F7D47]">
-
-                        {{ $loan[0] }}
-
-                    </h3>
-
-                    <p class="mt-2
-                              text-sm
-                              text-gray-600
-                              leading-relaxed">
-
-                        {{ $loan[1] }}
-
-                    </p>
-
-                    <span class="inline-flex items-center gap-2
-                                 mt-5
-                                 text-sm
-                                 font-semibold
-                                 text-[#479F61]">
-
-                        Learn More
-                        <span>→</span>
-
-                    </span>
-
-                </a>
-
-            @endforeach
 
         </div>
 
@@ -863,71 +370,48 @@
 {{-- =========================================================
      MEMBERSHIP CTA
 ========================================================= --}}
-<section class="relative overflow-hidden
-                bg-[#2F7D47]">
+<section class="bg-[#3F4145]">
 
-    <div class="absolute top-0 right-0
-                w-64 h-64
-                rounded-full
-                bg-[#479F61]/30
-                -translate-y-1/2 translate-x-1/3">
-    </div>
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8
+                text-center">
 
-    <div class="relative max-w-7xl mx-auto
-                px-4 sm:px-6 lg:px-8
-                py-16">
+        <div class="py-16">
 
-        <div class="flex flex-col
-                    md:flex-row
-                    md:items-center
-                    md:justify-between
-                    gap-8">
+            <p class="text-sm font-semibold uppercase
+                      tracking-wider text-[#F7D928]">
 
-            <div class="text-white max-w-2xl">
+                Join Urban Roads SACCO
 
-                <p class="text-sm font-semibold
-                          uppercase
-                          tracking-wider
-                          text-[#F7D928]">
+            </p>
 
-                    Join Urban Roads SACCO
+            <h2 class="mt-3 text-3xl md:text-4xl
+                       font-bold text-white">
 
-                </p>
+                Become Part of Our SACCO Family
 
-                <h2 class="mt-3
-                           text-3xl sm:text-4xl
-                           font-bold">
+            </h2>
 
-                    Become Part of Our SACCO Family
+            <p class="mt-5 text-gray-200
+                      max-w-2xl mx-auto
+                      leading-relaxed">
 
-                </h2>
+                Membership is open to eligible staff of Kenya Urban Roads
+                Authority, Kenya National Highways Authority, Kenya Rural
+                Roads Authority, Kenya Roads Board and Project Staff.
 
-                <p class="mt-4
-                          text-[#EAF5ED]
-                          leading-relaxed">
-
-                    Membership is open to eligible staff of Kenya Urban Roads
-                    Authority, Kenya National Highways Authority, Kenya Rural
-                    Roads Authority, Kenya Roads Board and Project Staff.
-
-                </p>
-
-            </div>
-
+            </p>
 
             <a href="{{ route('membership') }}"
-               class="shrink-0
-                      inline-flex items-center justify-center gap-2
-                      bg-white
-                      text-[#2F7D47]
-                      px-7 py-3.5
+               class="inline-block mt-7
+                      bg-[#479F61]
+                      text-white
+                      px-7 py-3
                       font-semibold
-                      hover:bg-[#F7D928]
-                      hover:text-[#252525]
-                      transition-all duration-200">
+                      rounded-sm
+                      hover:bg-[#2F7D47]
+                      transition">
 
                 Membership Information
-                <span>→</span>
 
             </a>
 
@@ -941,125 +425,174 @@
 {{-- =========================================================
      LATEST NEWS
 ========================================================= --}}
-<section class="py-20 bg-[#F7F8F7]">
+<section class="py-16 bg-white">
 
-    <div class="max-w-7xl mx-auto
-                px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div class="flex flex-col
-                    md:flex-row
+
+        <div class="flex flex-col md:flex-row
                     md:items-end
                     md:justify-between
-                    gap-5">
+                    gap-4">
 
             <div>
 
-                <p class="text-sm font-semibold
-                          uppercase
-                          tracking-wider
-                          text-[#479F61]">
+                <p class="text-sm font-semibold uppercase
+                          tracking-wider text-[#479F61]">
+
                     Updates
+
                 </p>
 
-                <h2 class="mt-3
-                           text-3xl sm:text-4xl
-                           font-bold
-                           text-[#2F7D47]">
+                <h2 class="mt-2 text-3xl font-bold text-[#3F4145]">
+
                     Latest News & Announcements
+
                 </h2>
 
-                <div class="w-12 h-1
-                            bg-[#F7D928]
-                            mt-4">
-                </div>
+                <div class="w-12 h-1 bg-[#D5595F] mt-4"></div>
 
             </div>
 
-            <a href="{{ route('news') }}"
-               class="inline-flex items-center gap-2
-                      font-semibold
-                      text-[#2F7D47]
-                      hover:text-[#479F61]">
 
-                View All Updates
-                <span>→</span>
+            <a href="{{ route('news') }}"
+               class="text-[#2F7D47]
+                      font-semibold
+                      hover:text-[#D5595F]
+                      hover:underline">
+
+                View All Updates →
 
             </a>
 
         </div>
 
 
-        <div class="grid md:grid-cols-3
-                    gap-6
-                    mt-10">
+        <div class="grid md:grid-cols-3 gap-6 mt-10">
 
-            @foreach([
-                [
-                    'Announcement',
-                    'Members Training Seminar',
-                    'Stay informed about SACCO activities, programmes and member communications.'
-                ],
-                [
-                    'Members',
-                    'Important Member Information',
-                    'Access important information, notices and updates from Urban Roads SACCO.'
-                ],
-                [
-                    'SACCO News',
-                    "What's Happening at the SACCO?",
-                    'Follow our latest activities, events and developments.'
-                ],
-            ] as $news)
 
-                <article class="bg-white
-                                border border-gray-200
-                                p-7
-                                hover:shadow-lg
-                                hover:border-[#479F61]
-                                transition-all duration-200">
+            {{-- NEWS 1 --}}
+            <article class="border border-gray-200
+                            p-6
+                            hover:border-[#479F61]
+                            hover:shadow-md
+                            transition">
 
-                    <p class="text-xs font-semibold
-                              uppercase
-                              tracking-wide
-                              text-[#D5595F]">
+                <p class="text-xs font-semibold
+                          text-[#479F61]
+                          uppercase">
 
-                        {{ $news[0] }}
+                    Announcement
 
-                    </p>
+                </p>
 
-                    <h3 class="mt-3
-                               text-xl font-bold
-                               text-[#2F7D47]">
+                <h3 class="mt-3 text-lg font-bold text-[#3F4145]">
 
-                        {{ $news[1] }}
+                    Members Training Seminar
 
-                    </h3>
+                </h3>
 
-                    <p class="mt-3
-                              text-sm
-                              text-gray-600
-                              leading-relaxed">
+                <p class="mt-3 text-sm text-gray-600">
 
-                        {{ $news[2] }}
+                    Stay informed about SACCO activities,
+                    programmes and member communications.
 
-                    </p>
+                </p>
 
-                    <a href="{{ route('news') }}"
-                       class="inline-flex items-center gap-2
-                              mt-6
-                              text-sm
-                              font-semibold
-                              text-[#479F61]
-                              hover:text-[#2F7D47]">
+                <a href="{{ route('news') }}"
+                   class="inline-block mt-5
+                          text-sm font-semibold
+                          text-[#2F7D47]
+                          hover:text-[#D5595F]
+                          hover:underline">
 
-                        Read More
-                        <span>→</span>
+                    Read More →
 
-                    </a>
+                </a>
 
-                </article>
+            </article>
 
-            @endforeach
+
+            {{-- NEWS 2 --}}
+            <article class="border border-gray-200
+                            p-6
+                            hover:border-[#D5595F]
+                            hover:shadow-md
+                            transition">
+
+                <p class="text-xs font-semibold
+                          text-[#D5595F]
+                          uppercase">
+
+                    Members
+
+                </p>
+
+                <h3 class="mt-3 text-lg font-bold text-[#3F4145]">
+
+                    Important Member Information
+
+                </h3>
+
+                <p class="mt-3 text-sm text-gray-600">
+
+                    Access important information, notices and
+                    updates from Urban Roads SACCO.
+
+                </p>
+
+                <a href="{{ route('news') }}"
+                   class="inline-block mt-5
+                          text-sm font-semibold
+                          text-[#B83F46]
+                          hover:underline">
+
+                    Read More →
+
+                </a>
+
+            </article>
+
+
+            {{-- NEWS 3 --}}
+            <article class="border border-gray-200
+                            p-6
+                            hover:border-[#F7D928]
+                            hover:shadow-md
+                            transition">
+
+                <p class="text-xs font-semibold
+                          text-[#A98C00]
+                          uppercase">
+
+                    SACCO News
+
+                </p>
+
+                <h3 class="mt-3 text-lg font-bold text-[#3F4145]">
+
+                    What's Happening at the SACCO?
+
+                </h3>
+
+                <p class="mt-3 text-sm text-gray-600">
+
+                    Follow our latest activities, events and
+                    developments.
+
+                </p>
+
+                <a href="{{ route('news') }}"
+                   class="inline-block mt-5
+                          text-sm font-semibold
+                          text-[#A98C00]
+                          hover:underline">
+
+                    Read More →
+
+                </a>
+
+            </article>
 
         </div>
 
@@ -1071,41 +604,27 @@
 {{-- =========================================================
      CONTACT CTA
 ========================================================= --}}
-<section class="bg-[#F7F8F7]">
+<section class="bg-[#479F61]">
 
-    <div class="max-w-7xl mx-auto
-                px-4 sm:px-6 lg:px-8
-                py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div class="bg-[#EAF5ED]
-                    border border-[#D7EBDD]
-                    px-6 sm:px-10
-                    py-10
-                    flex flex-col
-                    md:flex-row
-                    md:items-center
-                    md:justify-between
+        <div class="py-12
+                    flex flex-col md:flex-row
+                    items-center
+                    justify-between
                     gap-6">
 
-            <div>
+            <div class="text-white
+                        text-center
+                        md:text-left">
 
-                <p class="text-sm font-semibold
-                          uppercase
-                          tracking-wider
-                          text-[#479F61]">
-                    Need Assistance?
-                </p>
-
-                <h2 class="mt-2
-                           text-2xl md:text-3xl
-                           font-bold
-                           text-[#2F7D47]">
+                <h2 class="text-2xl md:text-3xl font-bold">
 
                     Have a question?
 
                 </h2>
 
-                <p class="text-gray-600 mt-2">
+                <p class="text-green-50 mt-2">
 
                     Our team is ready to assist you.
 
@@ -1114,17 +633,16 @@
             </div>
 
             <a href="{{ route('contact') }}"
-               class="inline-flex items-center justify-center gap-2
-                      bg-[#479F61]
-                      text-white
-                      px-7 py-3.5
+               class="bg-white
+                      text-[#2F7D47]
+                      px-7 py-3
                       font-semibold
-                      hover:bg-[#2F7D47]
-                      hover:shadow-md
-                      transition-all duration-200">
+                      rounded-sm
+                      hover:bg-[#F7D928]
+                      hover:text-[#252525]
+                      transition">
 
                 Contact Us
-                <span>→</span>
 
             </a>
 
