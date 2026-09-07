@@ -120,6 +120,14 @@
                         </a>
                     </li>
 
+                    <li>
+                        <a href="{{ route('documents') }}"
+                           class="text-gray-300
+                                  hover:text-[#F7D928]">
+                            Documents
+                        </a>
+                    </li>
+
 
                     <li>
                         <a href="{{ route('membership') }}"
