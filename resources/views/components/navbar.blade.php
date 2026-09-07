@@ -150,6 +150,17 @@
 
                 </a>
 
+                {{-- DOCUMENTS --}}
+                <a href="{{ route('documents') }}"
+                    class="text-sm font-medium
+                            text-gray-700
+                            hover:text-[#2F7D47]
+                            {{ request()->routeIs('documents')
+                               ? 'text-[#2F7D47] font-semibold'
+                               : '' }}">
+                    Documents
+                </a>
+
 
                 {{-- LOANS --}}
                 <a href="{{ route('loans') }}"
@@ -307,6 +318,18 @@
 
                     Services
 
+                </a>
+
+                {{-- DOCUMENTS --}}
+                <a href="{{ route('documents') }}"
+                    class="px-3 py-3
+                           text-gray-700
+                           hover:bg-[#EAF5ED]
+                           hover:text-[#2F7D47]
+                           {{ request()->routeIs('documents')
+                              ? 'bg-[#EAF5ED] text-[#2F7D47] font-semibold'
+                              : '' }}">
+                Documents
                 </a>
 
 
