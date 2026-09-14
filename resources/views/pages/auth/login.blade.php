@@ -14,7 +14,7 @@
             <a href="{{ route('home') }}" class="inline-flex justify-center">
 
                 <img
-                    src="{{ asset('images/urban-roads-logo.png') }}"
+                    src="{{ asset('images/logo.png') }}"
                     alt="Urban Roads SACCO"
                     class="w-24 h-24 object-contain"
                 >
