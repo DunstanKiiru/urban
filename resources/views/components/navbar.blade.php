@@ -218,19 +218,6 @@
                 </a>
 
 
-                {{-- LOGIN --}}
-                <a href="{{ route('login') }}"
-                   class="bg-[#479F61]
-                          text-white
-                          px-5 py-2.5
-                          text-sm font-semibold
-                          rounded-sm
-                          hover:bg-[#2F7D47]
-                          hover:shadow-md">
-
-                    Login
-
-                </a>
 
             </div>
 
