@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\Admin\NewsController;
 
 
 /*
@@ -74,14 +75,16 @@ Route::prefix('admin')
 
         Route::middleware('auth:admin')->group(function () {
 
-            Route::get('/dashboard', function () {
-                return view('admin.dashboard');
-            })->name('dashboard');
+    Route::get('/dashboard', function () {
+        return view('admin.dashboard');
+    })->name('dashboard');
 
-            Route::post('/logout', [AuthController::class, 'logout'])
-                ->name('logout');
+    Route::resource('/news', NewsController::class);
 
-        });
+    Route::post('/logout', [AuthController::class, 'logout'])
+        ->name('logout');
+
+});
 
     });
 
