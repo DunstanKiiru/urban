@@ -9,7 +9,7 @@
                class="flex items-center gap-3">
 
                 <img
-                    src="{{ asset('images/urban-roads-logo.png') }}"
+                    src="{{ asset('images/logo.png') }}"
                     alt="Urban Roads SACCO"
                     class="w-10 h-10 object-contain"
                 >

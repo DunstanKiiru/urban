@@ -1,8 +1,9 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('title', 'Admin Dashboard | Urban Roads SACCO')
 
 @section('content')
+
 
 <div class="min-h-screen bg-[#F7F8F7]">
 
