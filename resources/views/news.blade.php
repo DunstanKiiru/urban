@@ -32,102 +32,117 @@
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+        @if ($news->count())
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+
+                @foreach ($news as $article)
+
+                    <article
+                        class="bg-white border border-gray-200 hover:border-[#479F61] hover:shadow-md transition overflow-hidden">
+
+                        {{-- FEATURED IMAGE --}}
+                        @if ($article->image)
+
+                            <div class="h-52 overflow-hidden bg-gray-100">
+
+                                <img
+                                    src="{{ asset('storage/' . $article->image) }}"
+                                    alt="{{ $article->title }}"
+                                    class="w-full h-full object-cover"
+                                >
+
+                            </div>
+
+                        @else
+
+                            <div class="h-2 bg-[#479F61]"></div>
+
+                        @endif
 
 
-            {{-- NEWS 1 --}}
-            <article class="bg-white border border-gray-200
-                            hover:border-[#479F61]
-                            hover:shadow-md transition">
+                        <div class="p-7">
 
-                <div class="h-2 bg-[#479F61]"></div>
+                            <p class="text-xs font-semibold uppercase text-[#479F61]">
+                                SACCO News
+                            </p>
 
-                <div class="p-7">
+                            {{-- DATE --}}
+                            @if ($article->published_at)
 
-                    <p class="text-xs font-semibold uppercase text-[#479F61]">
-                        Announcement
-                    </p>
+                                <p class="mt-2 text-sm text-gray-500">
+                                    {{ $article->published_at->format('d F Y') }}
+                                </p>
 
-                    <p class="mt-2 text-sm text-gray-500">
-                        11 December 2025
-                    </p>
+                            @endif
 
-                    <h2 class="mt-4 text-xl font-bold text-[#3F4145]">
-                        Members Training Seminar
-                    </h2>
 
-                    <p class="mt-4 text-gray-600 leading-relaxed">
-                        Members Training Seminar held virtually from
-                        9:30 AM to 12:30 PM.
-                    </p>
+                            {{-- TITLE --}}
+                            <h2 class="mt-4 text-xl font-bold text-[#3F4145]">
+                                {{ $article->title }}
+                            </h2>
 
+
+                            {{-- EXCERPT --}}
+                            <p class="mt-4 text-gray-600 leading-relaxed">
+
+                                {{ $article->excerpt ?: \Illuminate\Support\Str::limit($article->content, 150) }}
+
+                            </p>
+
+
+                            {{-- READ MORE --}}
+                            <a
+                                href="{{ route('news.show', $article->slug) }}"
+                                class="inline-flex items-center mt-6 text-[#2F7D47] font-semibold hover:text-[#D5595F] transition">
+
+                                Read More
+
+                                <span class="ml-2">
+                                    →
+                                </span>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                @endforeach
+
+            </div>
+
+
+            {{-- PAGINATION --}}
+            @if ($news->hasPages())
+
+                <div class="mt-12">
+                    {{ $news->links() }}
                 </div>
 
-            </article>
+            @endif
 
+        @else
 
-            {{-- NEWS 2 --}}
-            <article class="bg-white border border-gray-200
-                            hover:border-[#D5595F]
-                            hover:shadow-md transition">
+            {{-- EMPTY STATE --}}
+            <div class="bg-white border border-gray-200 p-10 text-center">
 
-                <div class="h-2 bg-[#D5595F]"></div>
-
-                <div class="p-7">
-
-                    <p class="text-xs font-semibold uppercase text-[#D5595F]">
-                        Members
-                    </p>
-
-                    <p class="mt-2 text-sm text-gray-500">
-                        Member Notice
-                    </p>
-
-                    <h2 class="mt-4 text-xl font-bold text-[#3F4145]">
-                        Important Member Information
-                    </h2>
-
-                    <p class="mt-4 text-gray-600 leading-relaxed">
-                        Stay informed about important notices,
-                        communications and updates from the SACCO.
-                    </p>
-
+                <div class="text-4xl mb-4">
+                    📰
                 </div>
 
-            </article>
+                <h2 class="text-2xl font-bold text-[#3F4145]">
+                    No News Available
+                </h2>
 
+                <p class="mt-3 text-gray-600">
+                    There are currently no published news articles or announcements.
+                    Please check back later.
+                </p>
 
-            {{-- NEWS 3 --}}
-            <article class="bg-white border border-gray-200
-                            hover:border-[#F7D928]
-                            hover:shadow-md transition">
+            </div>
 
-                <div class="h-2 bg-[#F7D928]"></div>
-
-                <div class="p-7">
-
-                    <p class="text-xs font-semibold uppercase text-[#A98C00]">
-                        SACCO News
-                    </p>
-
-                    <p class="mt-2 text-sm text-gray-500">
-                        Latest Activities
-                    </p>
-
-                    <h2 class="mt-4 text-xl font-bold text-[#3F4145]">
-                        What's Happening at the SACCO?
-                    </h2>
-
-                    <p class="mt-4 text-gray-600 leading-relaxed">
-                        Follow our latest activities, programmes,
-                        events and developments.
-                    </p>
-
-                </div>
-
-            </article>
-
-        </div>
+        @endif
 
     </div>
 
@@ -147,11 +162,14 @@
             Contact our team for clarification or additional information.
         </p>
 
-        <a href="{{ route('contact') }}"
-           class="inline-block mt-6 bg-white text-[#2F7D47]
-                  px-7 py-3 font-semibold rounded-sm
-                  hover:bg-[#F7D928] hover:text-[#252525] transition">
+        <a
+            href="{{ route('contact') }}"
+            class="inline-block mt-6 bg-white text-[#2F7D47]
+                   px-7 py-3 font-semibold rounded-sm
+                   hover:bg-[#F7D928] hover:text-[#252525] transition">
+
             Contact Us
+
         </a>
 
     </div>

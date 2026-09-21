@@ -5,8 +5,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\NewsController;
+
 use App\Http\Controllers\Admin\AuthController;
-use App\Http\Controllers\Admin\NewsController;
+use App\Http\Controllers\Admin\NewsController as AdminNewsController;
 
 
 /*
@@ -33,16 +35,26 @@ Route::view('/services', 'services')
 Route::view('/membership', 'membership')
     ->name('membership');
 
-Route::view('/news', 'news')
-    ->name('news');
-
 Route::view('/documents', 'documents')
     ->name('documents');
 
 
 /*
 |--------------------------------------------------------------------------
-| Admin CMS Authentication
+| Public News
+|--------------------------------------------------------------------------
+*/
+
+Route::get('/news', [NewsController::class, 'index'])
+    ->name('news');
+
+Route::get('/news/{news:slug}', [NewsController::class, 'show'])
+    ->name('news.show');
+
+
+/*
+|--------------------------------------------------------------------------
+| Admin CMS
 |--------------------------------------------------------------------------
 */
 
@@ -75,16 +87,36 @@ Route::prefix('admin')
 
         Route::middleware('auth:admin')->group(function () {
 
-    Route::get('/dashboard', function () {
-        return view('admin.dashboard');
-    })->name('dashboard');
+            /*
+            |--------------------------------------------------------------------------
+            | Admin Dashboard
+            |--------------------------------------------------------------------------
+            */
 
-    Route::resource('/news', NewsController::class);
+            Route::get('/dashboard', function () {
+                return view('admin.dashboard');
+            })->name('dashboard');
 
-    Route::post('/logout', [AuthController::class, 'logout'])
-        ->name('logout');
 
-});
+            /*
+            |--------------------------------------------------------------------------
+            | News Management
+            |--------------------------------------------------------------------------
+            */
+
+            Route::resource('/news', AdminNewsController::class);
+
+
+            /*
+            |--------------------------------------------------------------------------
+            | Admin Logout
+            |--------------------------------------------------------------------------
+            */
+
+            Route::post('/logout', [AuthController::class, 'logout'])
+                ->name('logout');
+
+        });
 
     });
 
@@ -97,10 +129,16 @@ Route::prefix('admin')
 
 Route::middleware(['auth', 'verified'])->group(function () {
 
-    Route::view('dashboard', 'dashboard')
+    Route::view('/dashboard', 'dashboard')
         ->name('dashboard');
 
 });
 
 
-require __DIR__.'/settings.php';
+/*
+|--------------------------------------------------------------------------
+| Settings
+|--------------------------------------------------------------------------
+*/
+
+require __DIR__ . '/settings.php';

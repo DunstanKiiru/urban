@@ -3,63 +3,39 @@
 namespace App\Http\Controllers;
 
 use App\Models\News;
-use Illuminate\Http\Request;
 
 class NewsController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display published news articles.
      */
     public function index()
     {
-        //
+        $news = News::where('is_published', true)
+            ->where(function ($query) {
+                $query->whereNull('published_at')
+                    ->orWhere('published_at', '<=', now());
+            })
+            ->latest('published_at')
+            ->paginate(9);
+
+        return view('news', compact('news'));
     }
 
     /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
+     * Display a single published news article.
      */
     public function show(News $news)
     {
-        //
-    }
+        abort_unless(
+            $news->is_published &&
+            (
+                is_null($news->published_at) ||
+                $news->published_at <= now()
+            ),
+            404
+        );
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(News $news)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, News $news)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(News $news)
-    {
-        //
+        return view('news-show', compact('news'));
     }
 }
